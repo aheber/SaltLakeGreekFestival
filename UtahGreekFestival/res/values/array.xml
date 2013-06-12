@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="color_names">
+        <item>Performance Schedule</item>
+        <item>Map</item>
+        <item>Food</item>
+        <item>Recipes</item>
+        <item>Information</item>
+    </string-array>
+
+</resources>

@@ -9,7 +9,7 @@
         <item>Information</item>
     </string-array>
 
-        <string-array name="sched_days">
+	<string-array name="sched_days">
         <item>Thursday</item>
         <item>Friday</item>
         <item>Saturday</item>

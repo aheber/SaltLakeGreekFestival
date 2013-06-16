@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<array name="schedule">
+	<day name="Thursday">
+		<event name="Arnold"/>
+		<event name="Barry"/>
+		<event name="Chuck"/>
+		<event name="David"/>
+	</day>
+	<day name="Friday">
+		<event name="Ace"/>
+		<event name="Bandit"/>
+		<event name="Cha-Cha"/>
+		<event name="Deuce"/>
+	</day>
+	<day name="Saturday">
+		<event name="Fluffy"/>
+		<event name="Snuggles"/>            
+	</day>
+	<day name="Sunday">
+		<event name="Goldy"/>
+		<event name="Bubbles"/>
+	</day>
+</array>

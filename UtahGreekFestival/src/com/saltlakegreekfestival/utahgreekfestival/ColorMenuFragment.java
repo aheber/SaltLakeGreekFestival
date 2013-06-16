@@ -3,13 +3,17 @@ package com.saltlakegreekfestival.utahgreekfestival;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.saltlakegreekfestival.utahgreekfestival.MainActivity;
+import com.google.android.gms.maps.GoogleMapOptions;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.CameraPosition;
+import com.google.android.gms.maps.model.LatLng;
 
 public class ColorMenuFragment extends ListFragment {
 
@@ -35,7 +39,7 @@ public class ColorMenuFragment extends ListFragment {
 		    newContent = new Schedule();
 			break;
 		case 1:
-			newContent = new ColorFragment(R.color.green);
+			newContent = buildMap();
 			break;
 		case 2:
 			newContent = new ColorFragment(R.color.blue);
@@ -59,5 +63,19 @@ public class ColorMenuFragment extends ListFragment {
 		fca.switchContent(fragment);
 	}
 
+	private Fragment buildMap() {
+		GoogleMapOptions mGMapOpts = new GoogleMapOptions();
+		TypedValue tempVal = new TypedValue();
+		getResources().getValue(R.dimen.cameraStartLat, tempVal, true);
+		float cameraStartLat = tempVal.getFloat();
+		getResources().getValue(R.dimen.cameraStartLng, tempVal, true);
+		float cameraStartLng = tempVal.getFloat();
+		getResources().getValue(R.dimen.cameraStartZoom, tempVal, true);
+		float cameraStartZoom = tempVal.getFloat();
+		mGMapOpts.camera(CameraPosition.fromLatLngZoom(new LatLng(cameraStartLat, cameraStartLng), cameraStartZoom));
+		SupportMapFragment myMap = SupportMapFragment.newInstance(mGMapOpts);
+		myMap.getMap();
+		return myMap;
+	}
 
 }

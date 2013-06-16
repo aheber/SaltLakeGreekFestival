@@ -19,7 +19,9 @@
     <dimen name="slidingmenu_offset">60dp</dimen>
     <dimen name="list_padding">10dp</dimen>
     <dimen name="shadow_width">15dp</dimen>
-
+	<item name="cameraStartLat" format="float" type="dimen">40.764052</item>
+	<item name="cameraStartLng" format="float" type="dimen">-111.898993</item>
+	<item name="cameraStartZoom" format="float" type="dimen">17.5</item>
     <integer name="num_cols">1</integer>
 
 </resources>

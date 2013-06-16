@@ -21,7 +21,7 @@ public class MainActivity extends BaseActivity {
 		if (savedInstanceState != null)
 			mContent = getSupportFragmentManager().getFragment(savedInstanceState, "mContent");
 		if (mContent == null)
-			mContent = new ColorFragment(R.color.red);	
+			mContent = new Schedule(); //Open to Schedule fragment	
 
 		// set the Above View
 		setContentView(R.layout.content_frame);

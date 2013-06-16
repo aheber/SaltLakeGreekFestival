@@ -9,4 +9,31 @@
         <item>Information</item>
     </string-array>
 
+        <string-array name="sched_days">
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    
+   <string-array name="thursday">
+    <item name="title">item one</item>
+   </string-array>     
+   <string-array name="friday">
+    <item name="title">item two</item>
+   </string-array> 
+   <string-array name="saturday">
+    <item name="title">item three</item>
+   </string-array>
+      <string-array name="sunday">
+    <item name="title">item four</item>
+   </string-array>
+   
+   <array name="array0">
+    <item>@array/thursday</item>
+    <item>@array/friday</item>
+    <item>@array/saturday</item>
+    <item>@array/sunday</item>
+</array>
+        
 </resources>

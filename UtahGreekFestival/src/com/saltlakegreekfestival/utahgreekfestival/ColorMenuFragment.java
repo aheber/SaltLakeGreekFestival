@@ -1,5 +1,8 @@
 package com.saltlakegreekfestival.utahgreekfestival;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
@@ -10,13 +13,18 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMapOptions;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.gson.Gson;
 
 public class ColorMenuFragment extends ListFragment {
 
+	MarkerOptions[] mos;
+	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		return inflater.inflate(R.layout.list, null);
@@ -73,9 +81,19 @@ public class ColorMenuFragment extends ListFragment {
 		getResources().getValue(R.dimen.cameraStartZoom, tempVal, true);
 		float cameraStartZoom = tempVal.getFloat();
 		mGMapOpts.camera(CameraPosition.fromLatLngZoom(new LatLng(cameraStartLat, cameraStartLng), cameraStartZoom));
+		
 		SupportMapFragment myMap = SupportMapFragment.newInstance(mGMapOpts);
-		myMap.getMap();
+		//pre-commit map to allow us to capture it and add markers.
+		switchFragment(myMap);
+		GoogleMap map = myMap.getMap();
+		Gson gson = new Gson();
+		BufferedReader br = new BufferedReader(new InputStreamReader(getResources().openRawResource(R.raw.festivalmap)));
+		//only load json maps the first time
+		if(mos==null)
+			mos = gson.fromJson(br,MarkerOptions[].class);
+		for(int i=0;i < mos.length; i++){
+			map.addMarker(mos[i]);
+		}
 		return myMap;
 	}
-
 }

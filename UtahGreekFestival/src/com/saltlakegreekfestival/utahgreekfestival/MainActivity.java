@@ -53,6 +53,7 @@ public class MainActivity extends BaseActivity {
 		.beginTransaction()
 		.replace(R.id.content_frame, fragment)
 		.commit();
+		getSupportFragmentManager().executePendingTransactions();
 		getSlidingMenu().showContent();
 	}
 

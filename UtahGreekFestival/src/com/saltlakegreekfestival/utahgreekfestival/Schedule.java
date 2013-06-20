@@ -94,9 +94,11 @@ public class Schedule extends Fragment {
 		@Override
 		public View getGroupView(int i, boolean b, View view,
 				ViewGroup viewGroup) {
-			TextView textView = new TextView(Schedule.this.getActivity());
-			textView.setText(getGroup(i).toString());
-			return textView;
+			LayoutInflater inflater = LayoutInflater.from(getActivity());
+	        View eventday = inflater.inflate(R.layout.parentrow, null);
+	        TextView textday = (TextView)eventday.findViewById(R.id.eventtext);
+			textday.setText(getGroup(i).toString());
+			return eventday;
 		}
 
 		@Override

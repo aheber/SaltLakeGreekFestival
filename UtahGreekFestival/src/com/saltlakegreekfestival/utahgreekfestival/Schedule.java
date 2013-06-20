@@ -85,7 +85,7 @@ public class Schedule extends Fragment {
 		public long getChildId(int i, int i1) {
 			return i1;
 		}
-
+ 
 		@Override
 		public boolean hasStableIds() {
 			return true;
@@ -104,9 +104,11 @@ public class Schedule extends Fragment {
 		@Override
 		public View getChildView(int i, int i1, boolean b, View view,
 				ViewGroup viewGroup) {
-			TextView textView = new TextView(Schedule.this.getActivity());
-			textView.setText(getChild(i, i1).toString());
-			return textView;
+			LayoutInflater inflater = LayoutInflater.from(getActivity());
+	        View eventlist = inflater.inflate(R.layout.childrow, null);
+	        TextView textlist = (TextView)eventlist.findViewById(R.id.eventlisttext);
+			textlist.setText(getChild(i, i1).toString());
+			return eventlist;
 		}
 
 		@Override

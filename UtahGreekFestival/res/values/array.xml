@@ -2,19 +2,14 @@
 <resources>
 
     <string-array name="color_names">
-        <item>Performance Schedule</item>
-        <item>Map</item>
-        <item>Food</item>
-        <item>Recipes</item>
-        <item>Information</item>
+        <item>SCHEDULE</item>
+        <item>MAP</item>
+        <item>FOOD</item>
+        <item>RECIPES</item>
+        <item>INFORMATION</item>
     </string-array>
 
-	<string-array name="sched_days">
-        <item>Thursday</item>
-        <item>Friday</item>
-        <item>Saturday</item>
-        <item>Sunday</item>
-    </string-array>
+
     
    <string-array name="thursday">
     <item name="title">item one</item>

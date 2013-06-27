@@ -9,6 +9,14 @@
         <item>INFORMATION</item>
     </string-array>
 
+    <string-array name="fooditems">
+        <item>SCHEDULE</item>
+        <item>MAP</item>
+        <item>FOOD</item>
+        <item>RECIPES</item>
+        <item>INFORMATION</item>
+    </string-array>
+    
 
     
    <string-array name="thursday">

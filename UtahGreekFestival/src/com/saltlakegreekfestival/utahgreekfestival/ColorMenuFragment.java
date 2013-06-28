@@ -34,8 +34,8 @@ public class ColorMenuFragment extends ListFragment {
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 		String[] colors = getResources().getStringArray(R.array.color_names);
-		ArrayAdapter<String> colorAdapter = new ArrayAdapter<String>(getActivity(), 
-				R.layout.menu_list_item, android.R.id.text1, colors);
+		MenuAdapter colorAdapter = new MenuAdapter(getActivity(), 
+				R.layout.menu_list_item, colors);
 		setListAdapter(colorAdapter);
 	}
 

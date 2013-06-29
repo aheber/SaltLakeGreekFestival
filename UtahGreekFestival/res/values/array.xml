@@ -17,27 +17,13 @@
         <item>INFORMATION</item>
     </string-array>
     
-
-    
-   <string-array name="thursday">
-    <item name="title">item one</item>
-   </string-array>     
-   <string-array name="friday">
-    <item name="title">item two</item>
-   </string-array> 
-   <string-array name="saturday">
-    <item name="title">item three</item>
-   </string-array>
-      <string-array name="sunday">
-    <item name="title">item four</item>
-   </string-array>
-   
-   <array name="array0">
-    <item>@array/thursday</item>
-    <item>@array/friday</item>
-    <item>@array/saturday</item>
-    <item>@array/sunday</item>
-</array>
+    <string-array name="advetisements">
+        <item>coke</item>
+        <item>ctrees</item>
+        <item>crengland</item>
+        <item>roofers</item>
+        <item>zions</item>
+    </string-array>
    
         
 </resources>

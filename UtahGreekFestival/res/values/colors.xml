@@ -6,5 +6,6 @@
     <color name="white">#FFF</color>
     <color name="black">#000</color>
     <color name="darkgray">#333333</color>
+    <color name="gfblue">#2f65b0</color>
     
 </resources>

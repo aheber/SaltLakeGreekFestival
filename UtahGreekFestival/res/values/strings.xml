@@ -10,5 +10,9 @@
     <string name="gftitle">2013 SLC Greek Festival</string>
     <string name="first">First</string>
     <string name="last">Last</string>
+    <string name="event">Event Name</string>
+    <string name="eventdesc">This is a description of one of the events</string>
+    <string name="eventtime">8:00PM</string>
+    <string name="eventloc">Main Stage</string>
     <string name="advertdesc">Advertisement</string>
 </resources>

@@ -53,7 +53,7 @@ public class ColorMenuFragment extends ListFragment {
 			newContent = new Food();
 			break;
 		case 3:
-			newContent = new ColorFragment(android.R.color.white);
+			newContent = new Recipes();
 			break;
 		case 4:
 			newContent = new ColorFragment(android.R.color.black);

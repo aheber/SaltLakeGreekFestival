@@ -37,6 +37,17 @@ public class Recipes extends SherlockFragment {
 
     
     @Override
+	public void onStop() {
+		// TODO Auto-generated method stub
+		super.onStop();
+		// Cleanup action bar on fragment exit
+		if(mActionBar != null){
+			mActionBar.removeAllTabs();
+			mActionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
+		}
+	}
+
+	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub

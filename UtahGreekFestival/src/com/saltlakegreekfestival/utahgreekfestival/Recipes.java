@@ -36,16 +36,28 @@ public class Recipes extends SherlockFragment {
     private ArrayList<Day> days = new ArrayList<Day>();
 
     
-    @Override
-	public void onStop() {
+
+	@Override
+	public void onPause() {
 		// TODO Auto-generated method stub
-		super.onStop();
+		super.onPause();
 		// Cleanup action bar on fragment exit
 		if(mActionBar != null){
 			mActionBar.removeAllTabs();
 			mActionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
 		}
 	}
+
+	
+	
+	@Override
+	public void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		buildTabs();
+	}
+
+
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -64,8 +76,12 @@ public class Recipes extends SherlockFragment {
       //ActionBar gets initiated
         mActionBar = getSherlockActivity().getSupportActionBar();
       //Tell the ActionBar we want to use Tabs.
-        mActionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
       //instantiate a tab for each "day" in the xml populate the tab's listview with the events 
+        buildTabs();
+		return v;
+	}
+	public void buildTabs(){
+        mActionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         for(FestivalDay fd : festival){
             ActionBar.Tab tab = mActionBar.newTab().setText(fd.getName());
             Day day = new Day();
@@ -76,9 +92,7 @@ public class Recipes extends SherlockFragment {
             tabs.add(tab);
             days.add(day);
         }
-		return v;
 	}
-
     public static class Day extends SherlockListFragment {
         int mNum;
         String myName;

@@ -3,12 +3,14 @@ package com.saltlakegreekfestival.utahgreekfestival;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.zip.Inflater;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -18,6 +20,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,7 +33,6 @@ import com.saltlakegreekfestival.utahgreekfestival.Recipes.FestivalDay;
 import com.saltlakegreekfestival.utahgreekfestival.Recipes.MyTabsListener;
 
 public class Schedule extends SherlockFragment {
-	static final int NUM_ITEMS = 10;
 	String TAG = this.getTag();
 	ActionBar mActionBar;
 
@@ -67,7 +69,8 @@ public class Schedule extends SherlockFragment {
 	public void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
-		buildTabs();
+		if(mActionBar.getTabCount() == 0)
+			buildTabs();
 	}
 
 	@Override
@@ -86,7 +89,8 @@ public class Schedule extends SherlockFragment {
 		}
 		// ActionBar gets initiated
 		mActionBar = getSherlockActivity().getSupportActionBar();
-		buildTabs();
+		if(mActionBar.getTabCount() == 0)
+			buildTabs();
 
 		return v;
 	}
@@ -120,6 +124,23 @@ public class Schedule extends SherlockFragment {
 			this.setListAdapter(dla);
 			return v;
 		}
+
+		@Override
+		public void onListItemClick(ListView l, View v, int position, long id) {
+			// TODO Auto-generated method stub
+			super.onListItemClick(l, v, position, id);
+			AlertDialog.Builder ad = new AlertDialog.Builder(getSherlockActivity());
+			LayoutInflater i = getSherlockActivity().getLayoutInflater();
+			View vw = i.inflate(R.layout.schedule_info,null);
+			TextView title = (TextView)vw.findViewById(R.id.event_title);
+			TextView time = (TextView)vw.findViewById(R.id.event_time);
+			title.setText(events.get(position).getTitle());
+			time.setText(events.get(position).getTime());
+			ad.setView(vw);
+			ad.show();
+		}
+		
+		
 	}
 
 	class MyTabsListener implements ActionBar.TabListener {
@@ -246,6 +267,16 @@ public class Schedule extends SherlockFragment {
 
 		public FestivalEvent(String name) {
 			this.name = name;
+		}
+
+		public String getTitle() {
+			String title = name.substring(name.indexOf("M")+2);
+			return title;
+		}
+		
+		public String getTime() {
+			String time = name.substring(0, name.indexOf("M")+1);
+			return time;
 		}
 
 		public String getName() {

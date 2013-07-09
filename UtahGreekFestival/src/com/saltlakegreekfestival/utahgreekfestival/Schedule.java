@@ -134,8 +134,12 @@ public class Schedule extends SherlockFragment {
 			View vw = i.inflate(R.layout.schedule_info,null);
 			TextView title = (TextView)vw.findViewById(R.id.event_title);
 			TextView time = (TextView)vw.findViewById(R.id.event_time);
+			TextView loc = (TextView)vw.findViewById(R.id.event_loc);
+			TextView desc = (TextView)vw.findViewById(R.id.event_desc);
 			title.setText(events.get(position).getTitle());
 			time.setText(events.get(position).getTime());
+			loc.setText(events.get(position).getLocation());
+			desc.setText(events.get(position).getDescription());
 			ad.setView(vw);
 			ad.show();
 		}
@@ -207,7 +211,12 @@ public class Schedule extends SherlockFragment {
 					// festival.add(xpp.getAttributeValue(null, "name"));
 					arrayNum++;
 				} else if (tagName.equals("event")) {
-					fd.addEvent(xpp.getAttributeValue(null, "name"));
+					FestivalEvent fe = new FestivalEvent();
+					fe.setTitle(xpp.getAttributeValue(null, "name"));
+					fe.setTime(xpp.getAttributeValue(null, "time"));
+					fe.setLocation(xpp.getAttributeValue(null, "location"));
+					fe.setDescription(xpp.nextText());
+					fd.addEvent(fe);
 				}
 			} else if (eventType == XmlPullParser.END_TAG) {
 				if (xpp.getName().equals("day")) {
@@ -256,6 +265,10 @@ public class Schedule extends SherlockFragment {
 			events.add(new FestivalEvent(name));
 		}
 
+		public void addEvent(FestivalEvent fe) {
+			events.add(fe);
+		}
+
 		public ArrayList<FestivalEvent> getEvents() {
 			return events;
 		}
@@ -263,24 +276,48 @@ public class Schedule extends SherlockFragment {
 
 	private class FestivalEvent {
 
-		String name;
+		String title;
+		String time;
+		String location;
+		String description;
 
+		public FestivalEvent(){
+			
+		}
+		
 		public FestivalEvent(String name) {
-			this.name = name;
+			this.title = name;
 		}
 
+		public void setTitle(String title){
+			this.title = title;
+		}
 		public String getTitle() {
-			String title = name.substring(name.indexOf("M")+2);
 			return title;
 		}
 		
+		public void setTime(String time){
+			this.time = time;
+		}
+		
 		public String getTime() {
-			String time = name.substring(0, name.indexOf("M")+1);
 			return time;
 		}
-
-		public String getName() {
-			return name;
+		
+		public void setLocation(String location){
+			this.location = location;
+		}
+		
+		public String getLocation(){
+			return location;
+		}
+		
+		public void setDescription(String description){
+			this.description = description;
+		}
+		
+		public String getDescription(){
+			return description;
 		}
 	}
 
@@ -317,7 +354,7 @@ public class Schedule extends SherlockFragment {
 				holder = (Holder) row.getTag();
 			}
 
-			holder.menuTitle.setText(events.get(position).getName());
+			holder.menuTitle.setText(events.get(position).getTime()+" - "+events.get(position).getTitle());
 			/*
 			 * int iconId =
 			 * mContext.getResources().getIdentifier(events[position

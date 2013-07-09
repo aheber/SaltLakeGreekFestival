@@ -1,6 +1,5 @@
 package com.saltlakegreekfestival.utahgreekfestival;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,12 +10,10 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragment;
 
-@SuppressLint("NewApi")
 public class Food extends SherlockFragment {
 
 	@Override

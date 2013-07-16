@@ -177,8 +177,6 @@ public class Schedule extends SherlockFragment {
 		@Override
 		public void onTabReselected(Tab tab, FragmentTransaction ft) {
 			// TODO Auto-generated method stub
-			Toast.makeText(getSherlockActivity(), "Reselected!",
-					Toast.LENGTH_LONG).show();
 
 		}
 

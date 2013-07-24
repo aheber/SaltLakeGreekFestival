@@ -7,6 +7,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
+import android.view.KeyEvent;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
@@ -58,6 +60,29 @@ public class MainActivity extends BaseActivity {
 		// TODO Auto-generated method stub
 		handler.removeCallbacks(runnable);
 		super.onPause();
+	}
+	
+	@Override
+	public void onBackPressed() {
+		Log.v(TAG,"Menu is showing: "+String.valueOf(getSlidingMenu().isMenuShowing()));
+		if(this.getSlidingMenu().isMenuShowing())
+			super.onBackPressed();
+		else 
+			toggle();
+	}
+	
+	@Override
+	public boolean onKeyUp(int keyCode, KeyEvent event)
+	{
+	    if(keyCode == KeyEvent.KEYCODE_BACK)
+	    {
+	        if(getSlidingMenu().isMenuShowing())
+	        {
+	            finish();
+	            return true;
+	        }
+	    }
+	    return super.onKeyUp(keyCode, event);
 	}
 
 

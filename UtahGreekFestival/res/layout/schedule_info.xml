@@ -8,24 +8,39 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/event_title"
-        android:text="@string/event"/>   
+        android:text="@string/event"
+        android:textSize="26sp"
+        android:fontFamily="sans-serif-thin"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"/>   
     
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
         
       <TextView 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/event_time"
-        android:text="@string/eventtime" />
+        android:text="@string/eventtime"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="san-serif-light"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp" />
       
       <TextView 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="san-serif-light"
         android:id="@+id/event_loc"
-        android:text="@string/eventloc" />
+        android:text="@string/eventloc" 
+        android:paddingLeft="5dp"/>
         
     </LinearLayout>
     
@@ -34,7 +49,9 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/event_desc"
-        android:text="@string/eventdesc" />
+        android:text="@string/eventdesc" 
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
     
     
 

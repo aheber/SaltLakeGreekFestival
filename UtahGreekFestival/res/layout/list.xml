@@ -25,9 +25,9 @@
     android:id="@+id/menuhead"
     android:text="@string/gftitle"
     android:textColor="@color/white"
-    android:gravity="center"
+    android:gravity="left|center_vertical"
     android:fontFamily="sans-serif-condensed"
-    android:textSize="26sp"/>
+    android:textSize="18dp"/>
         
     </LinearLayout>
     

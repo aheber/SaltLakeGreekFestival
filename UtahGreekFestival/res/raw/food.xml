@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <array>
-    	<event name="dolmathes" price="5:00 PM" location="Main Stage">Description 1</event>
-		<event name="gyro" price="5:00 PM" location="Main Stage">Description 2</event>
-		<event name="olives" price="6:00 PM" location="Main Stage">Description 3</event>
-		<event name="feta" price="6:30 PM" location="Main Stage">Description 4</event>
-		<event name="tiropita" price="7:00 PM" location="Main Stage">Description 5</event>
-		<event name="souvlaki" price="7:30 PM" location="Main Stage">Description 6</event>
-		<event name="spanokopites" price="8:00 PM" location="Main Stage">Description 7</event>
-		<event name="fasolakia" price="9:00 PM" location="Main Stage">Description 8</event>
-		<event name="pilafi" price="10:00 PM" location="Main Stage">Description 9</event>
-		<event name="salad" price="11:00 PM" location="Main Stage">Description 10</event>
+    	<event name="Dolmathes" price="5:00 PM" location="Main Stage" description="Food Description">Description 1</event>
+		<event name="Gyro" price="5:00 PM" location="Main Stage" description="Food Description">Description 2</event>
+		<event name="Olives" price="6:00 PM" location="Main Stage" description="Food Description">Description 3</event>
+		<event name="Feta" price="6:30 PM" location="Main Stage" description="Food Description">Description 4</event>
+		<event name="Tiropita" price="7:00 PM" location="Main Stage" description="Food Description">Description 5</event>
+		<event name="Souvlaki" price="7:30 PM" location="Main Stage" description="Food Description">Description 6</event>
+		<event name="Spanokopites" price="8:00 PM" location="Main Stage" description="Food Description">Description 7</event>
+		<event name="Fasolakia" price="9:00 PM" location="Main Stage" description="Food Description">Description 8</event>
+		<event name="Pilafi" price="10:00 PM" location="Main Stage" description="Food Description">Description 9</event>
+		<event name="Salad" price="11:00 PM" location="Main Stage" description="Food Description">Description 10</event>
 </array>

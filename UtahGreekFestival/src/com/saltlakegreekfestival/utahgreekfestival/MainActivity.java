@@ -61,6 +61,7 @@ public class MainActivity extends BaseActivity {
 		handler.removeCallbacks(runnable);
 		super.onPause();
 	}
+
 	
 	@Override
 	public void onBackPressed() {
@@ -84,7 +85,7 @@ public class MainActivity extends BaseActivity {
 	    }
 	    return super.onKeyUp(keyCode, event);
 	}
-
+	
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {

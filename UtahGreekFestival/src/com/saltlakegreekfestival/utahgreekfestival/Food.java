@@ -10,14 +10,17 @@ import org.xmlpull.v1.XmlPullParserFactory;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -85,8 +88,9 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 					FoodItem fi = new FoodItem();
 					fi.setName(xpp.getAttributeValue(null, "name"));
 					fi.setImg(this.getSherlockActivity().getResources().getIdentifier(fi.getName().toLowerCase(), "drawable", getSherlockActivity().getPackageName()));
-					fi.setTime(xpp.getAttributeValue(null, "price"));
+					fi.setPrice(xpp.getAttributeValue(null, "price"));
 					fi.setLocation(xpp.getAttributeValue(null, "location"));
+					fi.setDescription(xpp.getAttributeValue(null, "description"));
 					foodinfo.add(fi);
 				}
 			} else if (eventType == XmlPullParser.END_TAG) {
@@ -98,6 +102,8 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 		}
 		return foodinfo;
 	}
+	
+	
 
 	public class ImageAdapter extends BaseAdapter {
 		private Context mContext;
@@ -123,8 +129,11 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 			ImageView imageView;
 			if (convertView == null) { // if it's not recycled, initialize some
 										// attributes
+				
+				final float scale = getSherlockActivity().getResources().getDisplayMetrics().density;
+				int pixels = (int) (95 * scale + 0.5f);
 				imageView = new ImageView(mContext);
-				imageView.setLayoutParams(new GridView.LayoutParams(185, 185));
+				imageView.setLayoutParams(new GridView.LayoutParams(pixels, pixels));
 				imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
 				imageView.setPadding(8, 8, 8, 8);
 			} else {
@@ -133,6 +142,10 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 
 			imageView.setImageResource(foodlist.get(position).getImg());
 			return imageView;
+			
+			
+		
+			
 		}
 
 
@@ -146,20 +159,44 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 		TextView name = (TextView)vw.findViewById(R.id.foodname);
 		TextView price = (TextView)vw.findViewById(R.id.price);
 		TextView loc = (TextView)vw.findViewById(R.id.location);
+		TextView desc = (TextView)vw.findViewById(R.id.description);
 		ImageView img = (ImageView)vw.findViewById(R.id.foodimage);
 		name.setText(foodlist.get(position).getName());
 		price.setText(foodlist.get(position).getprice());
 		loc.setText(foodlist.get(position).getLocation());
 		img.setImageResource(foodlist.get(position).getImg());
 		ad.setView(vw);
+		
+		ad.setNegativeButton("CLOSE ME",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog,
+                            int which) {
+                        dialog.cancel();
+                    }
+                });
+		Button close = (Button)vw.findViewById(R.id.foodclose);
+		
 		ad.show();
+		
+		close.setOnClickListener(new OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+               Toast.makeText(getActivity(), "Go Away,  I don't work",Toast.LENGTH_LONG);
+            }
+        });
+		
 	}
+	
 	
 	private class FoodItem {
 
 		String name;
 		String price;
 		String location;
+		String description;
 		int img;
 
 		public FoodItem(){
@@ -177,7 +214,7 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 			return name;
 		}
 		
-		public void setTime(String price){
+		public void setPrice(String price){
 			this.price = price;
 		}
 		
@@ -191,6 +228,15 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 		
 		public String getLocation(){
 			return location;
+		}
+		
+		public void setDescription(String description){
+			this.description = description;
+					
+		}
+		
+		public String getDescription(){
+			return description;
 		}
 		
 		public void setImg(int img){

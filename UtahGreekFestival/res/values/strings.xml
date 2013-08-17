@@ -15,4 +15,6 @@
     <string name="eventtime">8:00PM</string>
     <string name="eventloc">Main Stage</string>
     <string name="advertdesc">Advertisement</string>
+    <string name="close">Close</string>
+    <string name="couponhead">Buy One Entrance Get One Free</string>
 </resources>

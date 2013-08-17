@@ -5,15 +5,9 @@
         <item>SCHEDULE</item>
         <item>MAP</item>
         <item>FOOD</item>
-        <item>INFORMATION</item>
+        <item>COUPONS</item>
     </string-array>
 
-    <string-array name="fooditems">
-        <item>SCHEDULE</item>
-        <item>MAP</item>
-        <item>FOOD</item>
-        <item>INFORMATION</item>
-    </string-array>
     
     <string-array name="advetisements">
         <item>coke</item>

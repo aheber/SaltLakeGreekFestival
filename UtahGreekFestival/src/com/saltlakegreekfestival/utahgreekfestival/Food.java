@@ -175,18 +175,18 @@ public class Food extends SherlockFragment implements OnItemClickListener {
                         dialog.cancel();
                     }
                 });
-		Button close = (Button)vw.findViewById(R.id.foodclose);
+		//Button close = (Button)vw.findViewById(R.id.foodclose);
 		
 		ad.show();
 		
-		close.setOnClickListener(new OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-               Toast.makeText(getActivity(), "Go Away,  I don't work",Toast.LENGTH_LONG);
-            }
-        });
+		//close.setOnClickListener(new OnClickListener()
+        //{
+          //  @Override
+            //public void onClick(View v)
+            //{
+              // Toast.makeText(getActivity(), "Go Away,  I don't work",Toast.LENGTH_LONG);
+            //}
+       // });
 		
 	}
 	

@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <array>
-    	<event name="Dolmathes" price="5:00 PM" location="Main Stage" description="Food Description">Description 1</event>
+    	<event name="Dolmathes" price="$1.50 each or 3 for $3.75" location="Food Lines" description="Food Description">Description 1</event>
 		<event name="Gyro" price="5:00 PM" location="Main Stage" description="Food Description">Description 2</event>
 		<event name="Olives" price="6:00 PM" location="Main Stage" description="Food Description">Description 3</event>
 		<event name="Feta" price="6:30 PM" location="Main Stage" description="Food Description">Description 4</event>
-		<event name="Tiropita" price="7:00 PM" location="Main Stage" description="Food Description">Description 5</event>
+		<event name="Tyropita" price="7:00 PM" location="Main Stage" description="Food Description">Description 5</event>
 		<event name="Souvlaki" price="7:30 PM" location="Main Stage" description="Food Description">Description 6</event>
-		<event name="Spanokopites" price="8:00 PM" location="Main Stage" description="Food Description">Description 7</event>
+		<event name="Spanokopita" price="8:00 PM" location="Main Stage" description="Food Description">Description 7</event>
 		<event name="Fasolakia" price="9:00 PM" location="Main Stage" description="Food Description">Description 8</event>
 		<event name="Pilafi" price="10:00 PM" location="Main Stage" description="Food Description">Description 9</event>
 		<event name="Salad" price="11:00 PM" location="Main Stage" description="Food Description">Description 10</event>
+		<event name="Calamari" price="5:00 PM" location="Main Stage" description="Food Description">Description 1</event>
+		<event name="Keftethes" price="5:00 PM" location="Main Stage" description="Food Description">Description 2</event>
+		<event name="Stifatho" price="6:00 PM" location="Main Stage" description="Food Description">Description 3</event>
+		<event name="Tzatziki" price="6:30 PM" location="Main Stage" description="Food Description">Description 4</event>
+		<event name="Pastitsio" price="7:00 PM" location="Main Stage" description="Food Description">Description 5</event>
+		<event name="Greek Yogurt" price="7:30 PM" location="Main Stage" description="Food Description">Description 6</event>
+		<event name="Loukoumades" price="8:00 PM" location="Main Stage" description="Food Description">Description 7</event>
+		<event name="Greek Fries" price="9:00 PM" location="Main Stage" description="Food Description">Description 8</event>
+		<event name="Loukaniko" price="10:00 PM" location="Main Stage" description="Food Description">Description 9</event>
+		<event name="Lamb" price="11:00 PM" location="Main Stage" description="Food Description">Description 10</event>
+		<event name="Baklava" price="5:00 PM" location="Main Stage" description="Food Description">Description 1</event>
+		<event name="Melomakarona" price="5:00 PM" location="Main Stage" description="Food Description">Description 2</event>
+		<event name="Koulourakia" price="6:00 PM" location="Main Stage" description="Food Description">Description 3</event>
+		<event name="Kourabiedes" price="6:30 PM" location="Main Stage" description="Food Description">Description 4</event>
+		<event name="Kataifi" price="7:00 PM" location="Main Stage" description="Food Description">Description 5</event>
+		<event name="Pasta Flora" price="7:30 PM" location="Main Stage" description="Food Description">Description 6</event>
+		<event name="Galatopita" price="8:00 PM" location="Main Stage" description="Food Description">Description 7</event>
+		<event name="Amigdalota" price="9:00 PM" location="Main Stage" description="Food Description">Description 8</event>
 </array>

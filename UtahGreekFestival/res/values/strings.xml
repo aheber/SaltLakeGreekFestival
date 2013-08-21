@@ -16,5 +16,6 @@
     <string name="eventloc">Main Stage</string>
     <string name="advertdesc">Advertisement</string>
     <string name="close">Close</string>
-    <string name="couponhead">Buy One Entrance Get One Free</string>
+    <string name="couponhead">2 For 1 Admission</string>
+    <string name="coupontext">Present at entrance gate. Limit one per phone \n Only Valid September 5th - 8th</string>
 </resources>

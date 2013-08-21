@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <array name="schedule">
 	<day name="THURSDAY">
+		<event name="Festival Opens" time="4:00 PM" location="Main Stage">Description 1</event>
+		<event name="Children's Midway Opens" time="4:30 PM" location="Main Stage">Description 1</event>
 		<event name="Ribbon Cutting" time="5:00 PM" location="Main Stage">Description 1</event>
 		<event name="Dionysios Dancers" time="5:00 PM" location="Main Stage">Description 2</event>
-		<event name="Olympian Dancers" time="6:00 PM" location="Main Stage">Description 3</event>
-		<event name="Athenian Dancers" time="6:30 PM" location="Main Stage">Description 4</event>
-		<event name="Parthenon Dancers" time="7:00 PM" location="Main Stage">Description 5</event>
-		<event name="Olympian Dancers" time="7:30 PM" location="Main Stage">Description 6</event>
-		<event name="Athenian Dancers" time="8:00 PM" location="Main Stage">Description 7</event>
-		<event name="Parthenon Dancers" time="9:00 PM" location="Main Stage">Description 8</event>
-		<event name="Dionysios Dancers" time="10:00 PM" location="Main Stage">Description 9</event>
-		<event name="Festival Closes" time="11:00 PM" location="Main Stage">Description 10</event>
+		<event name="Olympian Dancers" time="6:30 PM" location="Main Stage">Description 3</event>
+		<event name="Athenian Dancers" time="7:30 PM" location="Main Stage">Description 4</event>
+		<event name="Nightly Prizes" time="8:00 PM" location="Main Stage">Description 5</event>
+		<event name="Parthenon Dancers" time="8:30 PM" location="Main Stage">Description 5</event>
+		<event name="Dionysios Dancers" time="9:30 PM" location="Main Stage">Description 6</event>
+		<event name="Festival Closes" time="11:00 PM" location="Main Stage">Description 7</event>
 	</day>
 	<day name="FRIDAY">
 		<event name="Festival Opens" time="11:00 AM" location="Main Stage">Description 11</event>
-		<event name="Cooking Demonstarton" time="2:00 PM" location="Main Stage">Description 12</event>
-		<event name="Olympian Dancers" time="3:00 PM" location="Main Stage">Description 13</event>
+		<event name="St. Sophia School Choir" time="2:30 PM" location="Main Stage">Description 12</event>
+		<event name="Children's Midway Opens" time="3:00 PM" location="Main Stage">Description 13</event>
+		<event name="Parthenon Dancers" time="3:30 PM" location="Main Stage">Description 15</event>
 		<event name="Athenian Dancers" time="4:00 PM" location="Main Stage">Description 14</event>
-		<event name="Parthenon Dancers" time="4:30 PM" location="Main Stage">Description 15</event>
+		<event name="Olympian Dancers" time="4:30 PM" location="Main Stage">Description 19</event>
 		<event name="Dionysios Dancers" time="5:00 PM" location="Main Stage">Description 16</event>
 		<event name="Cooking Demonstartion" time="5:00 PM" location="Main Stage">Description 17</event>
-		<event name="Choir Performance" time="6:00 PM" location="Main Stage">Description 18</event>
-		<event name="Olympian Dancers" time="6:30 PM" location="Main Stage">Description 19</event>
-		<event name="Athenian Dancers" time="7:00 PM" location="Main Stage">Description 20</event>
-		<event name="Cretan-Minotavros Dancers" time="8:00 PM" location="Main Stage">Description 21</event>
+		<event name="Choir Performance" time="6:00 PM" location="Cathedral">Description 18</event>
+		<event name="Athenian Dancers" time="6:30 PM" location="Main Stage">Description 20</event>
+		<event name="Olympian Dancers" time="7:00 PM" location="Main Stage">Description 19</event>
+		<event name="Cretan Minotavros Dancers" time="8:00 PM" location="Main Stage">Description 21</event>
 		<event name="Parthenon Dancers" time="9:00 PM" location="Main Stage">Description 22</event>
 		<event name="Dionysios Dancers" time="10:00 PM" location="Main Stage">Description 23</event>
 		<event name="Festival Closes" time="11:00 PM" location="Main Stage">Description 24</event>
 	</day>
 	<day name="SATURDAY">
 		<event name="Festival Opens" time="11:00 AM" location="Main Stage">Description 25</event>
-		<event name="Athenian Dancers" time="11:00 AM" location="Main Stage">Description 26</event>
 		<event name="Parthenon Dancers" time="11:45 AM" location="Main Stage">Description 27</event>
+		<event name="Children's Midway Opens" time="12:00 PM" location="Main Stage">Description 13</event>
 		<event name="Olympian Dancers" time="12:30 PM" location="Main Stage">Description 28</event>
 		<event name="Athenian Dancers" time="1:15 PM" location="Main Stage">Description 29</event>
 		<event name="Parthenon Dancers" time="2:00 PM" location="Main Stage">Description 30</event>
 		<event name="Cooking Demonstration" time="2:00 PM" location="Main Stage">Description 31</event>
 		<event name="Olympian Dancers" time="2:45 PM" location="Main Stage">Description 32</event>
 		<event name="Dionysios Dancers" time="3:30 PM" location="Main Stage">Description 33</event>
-		<event name="Choir Performance" time="4:00 PM" location="Main Stage">Description 34</event>
-		<event name="Athenian Dancers" time="4:45 PM" location="Main Stage">Description 35</event>
 		<event name="Cooking Demonstartion" time="5:00 PM" location="Main Stage">Description 36</event>
-		<event name="Cretan-Minotavros Dancers" time="5:30 PM" location="Main Stage">Description 37</event>
-		<event name="Choir Performance" time="6:00 PM" location="Main Stage">Description 38</event>
-		<event name="Olympian Dancers" time="6:45" location="Main Stage">Description 39</event>
+		<event name="Cretan Minotavros Dancers" time="5:30 PM" location="Main Stage">Description 37</event>
+		<event name="Choir Performance" time="6:00 PM" location="Cathedral">Description 38</event>
+		<event name="Athenian Dancers" time="6:00 PM" location="Main Stage">Description 29</event>
+		<event name="Olympian Dancers" time="7:00 PM" location="Main Stage">Description 39</event>
 		<event name="Dionysios Dancers" time="7:30 PM" location="Main Stage">Description 40</event>
 		<event name="Parthenon Dancers" time="9:00 PM" location="Main Stage">Description 41</event>
 		<event name="Dionysios Dancers" time="10:00 PM" location="Main Stage">Description 42</event>
@@ -51,18 +51,19 @@
 	</day>
 	<day name="SUNDAY">
 		<event name="Festival Opens" time="11:00 AM" location="Main Stage">Description 44</event>
-		<event name="Olypmian Dancers" time="11:30 AM" location="Main Stage">Description 45</event>
-		<event name="Athenian Dancers" time="12:00 PM" location="Main Stage">Description 46</event>
-		<event name="Olympian Dancers" time="12:30 PM" location="Main Stage">Description 47</event>
-		<event name="Athenian Dancers" time="1:00 PM" location="Main Stage">Description 48</event>
-		<event name="Parthenon Dancers" time="1:30 PM" location="Main Stage">Description 49</event>
+		<event name="Olympian Dancers" time="12:00 PM" location="Main Stage">Description 45</event>
+		<event name="Children's Midway Opens" time="12:00 PM" location="Main Stage">Description 13</event>
+		<event name="Athenian Dancers" time="12:30 PM" location="Main Stage">Description 46</event>
+		<event name="Parthenon Dancers" time="1:00 PM" location="Main Stage">Description 49</event>
+		<event name="Olympian Dancers" time="1:30 PM" location="Main Stage">Description 45</event>
 		<event name="Dionysios Dancers" time="2:00 PM" location="Main Stage">Description 50</event>
 		<event name="Cooking Demonstartion" time="2:00 PM" location="Main Stage">Description 51</event>
-		<event name="Cretan-Minotavros Dancers" time="3:00 PM" location="Main Stage">Description 52</event>
-		<event name="Choir Performance" time="3:30 PM" location="Main Stage">Description 53</event>
+		<event name="Athenian Dancers" time="2:30 PM" location="Main Stage">Description 46</event>
+		<event name="Cretan Minotavros Dancers" time="3:00 PM" location="Main Stage">Description 52</event>
+		<event name="Choir Performance" time="3:30 PM" location="Cathedral">Description 53</event>
 		<event name="Parthenon Dancers" time="4:00 PM" location="Main Stage">Description 54</event>
-		<event name="Olympian Dancers" time="4:30 PM" location="Main Stage">Description 55</event>
-		<event name="Dionysios Dancers" time="5:00 PM" location="Main Stage">Description 56</event>
+		<event name="Dionysios Dancers" time="4:30 PM" location="Main Stage">Description 56</event>
+		<event name="Olympian Dancers" time="5:00 PM" location="Main Stage">Description 55</event>
 		<event name="Cooking Demonstration" time="5:00 PM" location="Main Stage">Description 57</event>
 		<event name="Athenian Dancers" time="5:30 PM" location="Main Stage">Description 58</event>
 		<event name="Parthenon Dancers" time="6:15 PM" location="Main Stage">Description 59</event>

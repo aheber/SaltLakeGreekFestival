@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <array>
-    	<event name="Dolmathes" price="$1.50 each or 3 for $3.75" location="Food Lines" description="Food Description">Description 1</event>
-		<event name="Gyro" price="5:00 PM" location="Main Stage" description="Food Description">Description 2</event>
-		<event name="Olives" price="6:00 PM" location="Main Stage" description="Food Description">Description 3</event>
-		<event name="Feta" price="6:30 PM" location="Main Stage" description="Food Description">Description 4</event>
-		<event name="Tyropita" price="7:00 PM" location="Main Stage" description="Food Description">Description 5</event>
-		<event name="Souvlaki" price="7:30 PM" location="Main Stage" description="Food Description">Description 6</event>
-		<event name="Spanokopita" price="8:00 PM" location="Main Stage" description="Food Description">Description 7</event>
-		<event name="Fasolakia" price="9:00 PM" location="Main Stage" description="Food Description">Description 8</event>
-		<event name="Pilafi" price="10:00 PM" location="Main Stage" description="Food Description">Description 9</event>
-		<event name="Salad" price="11:00 PM" location="Main Stage" description="Food Description">Description 10</event>
-		<event name="Calamari" price="5:00 PM" location="Main Stage" description="Food Description">Description 1</event>
-		<event name="Keftethes" price="5:00 PM" location="Main Stage" description="Food Description">Description 2</event>
-		<event name="Stifatho" price="6:00 PM" location="Main Stage" description="Food Description">Description 3</event>
-		<event name="Tzatziki" price="6:30 PM" location="Main Stage" description="Food Description">Description 4</event>
-		<event name="Pastitsio" price="7:00 PM" location="Main Stage" description="Food Description">Description 5</event>
-		<event name="Greek Yogurt" price="7:30 PM" location="Main Stage" description="Food Description">Description 6</event>
-		<event name="Loukoumades" price="8:00 PM" location="Main Stage" description="Food Description">Description 7</event>
-		<event name="Greek Fries" price="9:00 PM" location="Main Stage" description="Food Description">Description 8</event>
-		<event name="Loukaniko" price="10:00 PM" location="Main Stage" description="Food Description">Description 9</event>
-		<event name="Lamb" price="11:00 PM" location="Main Stage" description="Food Description">Description 10</event>
-		<event name="Baklava" price="5:00 PM" location="Main Stage" description="Food Description">Description 1</event>
-		<event name="Melomakarona" price="5:00 PM" location="Main Stage" description="Food Description">Description 2</event>
-		<event name="Koulourakia" price="6:00 PM" location="Main Stage" description="Food Description">Description 3</event>
-		<event name="Kourabiedes" price="6:30 PM" location="Main Stage" description="Food Description">Description 4</event>
-		<event name="Kataifi" price="7:00 PM" location="Main Stage" description="Food Description">Description 5</event>
-		<event name="Pasta Flora" price="7:30 PM" location="Main Stage" description="Food Description">Description 6</event>
-		<event name="Galatopita" price="8:00 PM" location="Main Stage" description="Food Description">Description 7</event>
-		<event name="Amigdalota" price="9:00 PM" location="Main Stage" description="Food Description">Description 8</event>
+    	<event name="Dolmathes" fullname="Dolmathes" price="$1.50 each or 3 for $3.75" location="Food Lines" description="Food Description">Description 1</event>
+		<event name="Gyro" fullname="Gyro" price="$4.50" location="Food Lines" description="Food Lines">Description 2</event>
+		<event name="Olives" fullname="Kalamata Olives" price="$1.25" location="Food Lines" description="Food Lines">Description 3</event>
+		<event name="Feta" fullname="Feta" price="$1.25" location="Food Lines" description="Food Lines">Description 4</event>
+		<event name="Tiropita" fullname="Tyroita" price="#3.50" location="Special Booth" description="Food Description">Description 5</event>
+		<event name="Souvlaki" fullname="Souvlaki" price="$3.00" location="Food Lines" description="Food Lines">Description 6</event>
+		<event name="Spanokopita" fullname="Spanokopita" price="$3.00" location="Food Lines" description="Food Lines">Description 7</event>
+		<event name="Fasolakia" fullname="Fasolakia" price="$2.00" location="Food Lines" description="Food Lines">Description 8</event>
+		<event name="Pilafi" fullname="Pilafi" price="$2.00" location="Food Lines" description="Food Lines">Description 9</event>
+		<event name="Salad" fullname="Greek Salad" price="$1.75" location="Food Lines" description="Food Lines">Description 10</event>
+		<event name="Kalamari" fullname="Kalamari" price="$3.50" location="Food Lines" description="Food Lines">Description 1</event>
+		<event name="Keftethes" fullname="Keftethes" price="$1.50 or 2 for $2.75" location="Food Lines" description="Food Description">Description 2</event>
+		<event name="Stifatho" fullname="Stifatho" price="#3.50" location="Food Lines" description="Food Description">Description 3</event>
+		<event name="Pastitsio" fullname="Pastitsio" price="$4.50" location="Food Lines" description="Food Description">Description 5</event>
+		<event name="Loukoumades" fullname="Loukoumades" price="$4.00" location="Special Booth" description="Food Description">Description 7</event>
+		<event name="Fries" fullname="Greek Fries" price="#3.00" location="Special Booth" description="Food Description">Description 8</event>
+		<event name="Loukaniko" fullname="Louakaniko" price="$4.50" location="Special Booth" description="Food Description">Description 9</event>
+		<event name="Lamb" fullname="Lamb" price="$15.00" location="Special Booth" description="Food Description">Description 10</event>
+		<event name="Baklava"  fullname="Baklava" price="#3.50" location="Pastry Lines" description="Food Description">Description 1</event>
+		<event name="Melomakarona" fullname="Melomakarona" price="$2.50" location="Pastry Lines" description="Food Description">Description 2</event>
+		<event name="Koulourakia" fullname="Koulourakia" price="$6.00" location="Pastry Lines" description="Food Description">Description 3</event>
+		<event name="Kourabiedes" fullname="Kourabiedes" price="$2.25" location="Pastry Lines" description="Food Description">Description 4</event>
+		<event name="Kataifi" fullname="Kataifi" price="$3.50" location="Pastry Lines" description="Food Description">Description 5</event>
+		<event name="PastaFlora" fullname="Pasta Flora" price="$2.25" location="Pastry Lines" description="Food Description">Description 6</event>
+		<event name="Galatopita" fullname="Galatopita" price="$2.50" location="Pastry Lines" description="Food Description">Description 7</event>
+		<event name="Amigdalota" fullname="Amigdalota" price="$2.50" location="Pastry Lines" description="Food Description">Description 8</event>
 </array>

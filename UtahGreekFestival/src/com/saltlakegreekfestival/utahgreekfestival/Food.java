@@ -87,6 +87,7 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 				if (tagName.equals("event")) {
 					FoodItem fi = new FoodItem();
 					fi.setName(xpp.getAttributeValue(null, "name"));
+					fi.setFullName(xpp.getAttributeValue(null, "fullname"));
 					fi.setImg(this.getSherlockActivity().getResources().getIdentifier(fi.getName().toLowerCase(), "drawable", getSherlockActivity().getPackageName()));
 					fi.setPrice(xpp.getAttributeValue(null, "price"));
 					fi.setLocation(xpp.getAttributeValue(null, "location"));
@@ -161,10 +162,11 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 		TextView loc = (TextView)vw.findViewById(R.id.location);
 		TextView desc = (TextView)vw.findViewById(R.id.description);
 		ImageView img = (ImageView)vw.findViewById(R.id.foodimage);
-		name.setText(foodlist.get(position).getName());
+		name.setText(foodlist.get(position).getFullName());
 		price.setText(foodlist.get(position).getprice());
 		loc.setText(foodlist.get(position).getLocation());
 		img.setImageResource(foodlist.get(position).getImg());
+		desc.setText(foodlist.get(position).getDescription());
 		ad.setView(vw);
 		
 		ad.setNegativeButton("CLOSE ME",
@@ -197,6 +199,7 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 		String price;
 		String location;
 		String description;
+		String fullname;
 		int img;
 
 		public FoodItem(){
@@ -212,6 +215,13 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 		}
 		public String getName() {
 			return name;
+		}
+		
+		public void setFullName(String fullname){
+			this.fullname = fullname;
+		}
+		public String getFullName() {
+			return fullname;
 		}
 		
 		public void setPrice(String price){

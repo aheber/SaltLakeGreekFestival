@@ -84,7 +84,7 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 			} else if (eventType == XmlPullParser.START_TAG) {
 				tagName = xpp.getName();
 				Log.d("SCHED", "Start tag " + tagName);
-				if (tagName.equals("event")) {
+				if (tagName.equals("food")) {
 					FoodItem fi = new FoodItem();
 					fi.setName(xpp.getAttributeValue(null, "name"));
 					fi.setFullName(xpp.getAttributeValue(null, "fullname"));

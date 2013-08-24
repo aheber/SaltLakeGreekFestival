@@ -7,8 +7,12 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.ViewGroup.LayoutParams;
+import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
@@ -121,6 +125,13 @@ public class MainActivity extends BaseActivity {
         mPager.setOffscreenPageLimit(adverts.length-1);
         mPager.setPageMargin(0);
         //runnable.run();
+        DisplayMetrics metrics = getResources().getDisplayMetrics();
+        LayoutParams lp = mPager.getLayoutParams();
+        
+        lp.height = (int) Math.max(metrics.widthPixels*0.10416666666667, 1);
+        FrameLayout fl = (FrameLayout) findViewById(R.id.content_frame);
+        RelativeLayout.LayoutParams flparams = (RelativeLayout.LayoutParams)fl.getLayoutParams();
+        flparams.bottomMargin=(int) Math.max(metrics.widthPixels*0.10416666666667, 1);
 	}
 
 	@Override
@@ -166,5 +177,7 @@ public class MainActivity extends BaseActivity {
         public int getCount() {
             return adverts.length;
         }
+        
+        
     }
 }

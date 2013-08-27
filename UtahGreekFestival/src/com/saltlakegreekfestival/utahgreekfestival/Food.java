@@ -89,6 +89,7 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 					fi.setName(xpp.getAttributeValue(null, "name"));
 					fi.setFullName(xpp.getAttributeValue(null, "fullname"));
 					fi.setImg(this.getSherlockActivity().getResources().getIdentifier(fi.getName().toLowerCase(), "drawable", getSherlockActivity().getPackageName()));
+					fi.setSmImg(this.getSherlockActivity().getResources().getIdentifier("sm_"+fi.getName().toLowerCase(), "drawable", getSherlockActivity().getPackageName()));
 					fi.setPrice(xpp.getAttributeValue(null, "price"));
 					fi.setLocation(xpp.getAttributeValue(null, "location"));
 					fi.setDescription(xpp.getAttributeValue(null, "description"));
@@ -141,7 +142,7 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 				imageView = (ImageView) convertView;
 			}
 
-			imageView.setImageResource(foodlist.get(position).getImg());
+			imageView.setImageResource(foodlist.get(position).getSmImg());
 			return imageView;
 			
 			
@@ -169,7 +170,7 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 		desc.setText(foodlist.get(position).getDescription());
 		ad.setView(vw);
 		
-		ad.setNegativeButton("CLOSE ME",
+		ad.setNegativeButton("Return to Food",
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog,
@@ -201,6 +202,7 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 		String description;
 		String fullname;
 		int img;
+		int smimg;
 
 		public FoodItem(){
 			
@@ -255,6 +257,14 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 		
 		public int getImg(){
 			return img;
+		}
+		
+		public void setSmImg(int smimg){
+			this.smimg = smimg;
+		}
+		
+		public int getSmImg(){
+			return smimg;
 		}
 	}
 }

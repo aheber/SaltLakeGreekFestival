@@ -16,12 +16,12 @@
         android:background="@color/gfblue"/>   
     
     <ImageView 
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:layout_width="fill_parent"
         android:src="@drawable/pilafi"
         android:id="@+id/foodimage"
         android:gravity="center"
-        android:padding="10dp" />
+        android:padding="0dp" />
     
 
     
@@ -30,19 +30,42 @@
         android:layout_height="fill_parent"
         android:layout_width="wrap_content"
         android:id="@+id/price"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:padding="10dp"
         android:text="Price"/>
     
+        <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+            
+       <TextView
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:id="@+id/locationtext"
+        android:textStyle="bold"
+        android:text="Location: " />     
+        
         <TextView
         android:layout_height="fill_parent"
         android:layout_width="wrap_content"
         android:id="@+id/location"
         android:text="Location" />
+        
+        </LinearLayout>
     
 
         <TextView
         android:layout_height="fill_parent"
         android:layout_width="wrap_content"
         android:id="@+id/description"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
         android:text="Description" />
 
 </LinearLayout>

@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <array>
-    	<food name="Dolmathes" fullname="Dolmathes" price="$1.50 each or 3 for $3.75" location="Food Lines" description="Food Description">Description 1</food>
-		<food name="Gyro" fullname="Gyro" price="$4.50" location="Food Lines" description="Food Lines">Description 2</food>
-		<food name="Olives" fullname="Kalamata Olives" price="$1.25" location="Food Lines" description="Food Lines">Description 3</food>
-		<food name="Feta" fullname="Feta" price="$1.25" location="Food Lines" description="Food Lines">Description 4</food>
-		<food name="Tiropita" fullname="Tyroita" price="#3.50" location="Special Booth" description="Food Description">Description 5</food>
-		<food name="Souvlaki" fullname="Souvlaki" price="$3.00" location="Food Lines" description="Food Lines">Description 6</food>
-		<food name="Spanokopita" fullname="Spanokopita" price="$3.00" location="Food Lines" description="Food Lines">Description 7</food>
-		<food name="Fasolakia" fullname="Fasolakia" price="$2.00" location="Food Lines" description="Food Lines">Description 8</food>
-		<food name="Pilafi" fullname="Pilafi" price="$2.00" location="Food Lines" description="Food Lines">Description 9</food>
-		<food name="Salad" fullname="Greek Salad" price="$1.75" location="Food Lines" description="Food Lines">Description 10</food>
-		<food name="Kalamari" fullname="Kalamari" price="$3.50" location="Food Lines" description="Food Lines">Description 1</food>
-		<food name="Keftethes" fullname="Keftethes" price="$1.50 or 2 for $2.75" location="Food Lines" description="Food Description">Description 2</food>
-		<food name="Stifatho" fullname="Stifatho" price="#3.50" location="Food Lines" description="Food Description">Description 3</food>
-		<food name="Pastitsio" fullname="Pastitsio" price="$4.50" location="Food Lines" description="Food Description">Description 5</food>
-		<food name="Loukoumades" fullname="Loukoumades" price="$4.00" location="Special Booth" description="Food Description">Description 7</food>
-		<food name="Fries" fullname="Greek Fries" price="#3.00" location="Special Booth" description="Food Description">Description 8</food>
-		<food name="Loukaniko" fullname="Louakaniko" price="$4.50" location="Special Booth" description="Food Description">Description 9</food>
-		<food name="Lamb" fullname="Lamb" price="$15.00" location="Special Booth" description="Food Description">Description 10</food>
-		<food name="Baklava"  fullname="Baklava" price="#3.50" location="Pastry Lines" description="Food Description">Description 1</food>
-		<food name="Melomakarona" fullname="Melomakarona" price="$2.50" location="Pastry Lines" description="Food Description">Description 2</food>
-		<food name="Koulourakia" fullname="Koulourakia" price="$6.00" location="Pastry Lines" description="Food Description">Description 3</food>
-		<food name="Kourabiedes" fullname="Kourabiedes" price="$2.25" location="Pastry Lines" description="Food Description">Description 4</food>
-		<food name="Kataifi" fullname="Kataifi" price="$3.50" location="Pastry Lines" description="Food Description">Description 5</food>
-		<food name="PastaFlora" fullname="Pasta Flora" price="$2.25" location="Pastry Lines" description="Food Description">Description 6</food>
-		<food name="Galatopita" fullname="Galatopita" price="$2.50" location="Pastry Lines" description="Food Description">Description 7</food>
-		<food name="Amigdalota" fullname="Amigdalota" price="$2.50" location="Pastry Lines" description="Food Description">Description 8</food>
+    <food name="Chicken" fullname="Chicken" price="$4.50" location="Food Lines" description="Chicken marinated in herbs and spices and baked in an oil sauce.">Description 1</food>
+    <food name="Dolmathes" fullname="Dolmathes" price="$1.50 each or 3 for $3.75" location="Food Lines" description="Grapevine leaves stuff with rice and vegetables, meat is also often included.">Description 1</food>
+    <food name="Gyro" fullname="Gyro" price="$4.50" location="Food Lines" description="Consists of meat, tomato, onion and tzatziki sauce and is served with pita bread.">Description 2</food>
+    <food name="Olives" fullname="Kalamata Olives" price="$1.25" location="Food Lines" description="Large, black olives with a smooth, meat like taste, are named after the city of Kalamata, Greece.">Description 3</food>
+    <food name="Feta" fullname="Feta" price="$1.25" location="Food Lines" description="An Aged crumbly cheese.">Description 4</food>
+    <food name="Souvlaki" fullname="Souvlaki" price="$4.00" location="Food Lines" description="Grilled on a skewer (chicken or pork), marinated in oil, salt, pepper, oregano and lemon.">Description 6</food>
+    <food name="Spanokopita" fullname="Spanokopita" price="$3.00" location="Food Lines" description="Spinach, feta cheese (sometimes in combination with ricotta cheese), onions or spring onions, egg and seasoning wrapped in phyllo pastry.">Description 7</food>
+    <food name="Fasolakia" fullname="Fasolakia" price="$2.00" location="Food Lines" description="Fresh gren beans in tomato sauce.">Description 8</food>
+    <food name="Pilafi" fullname="Pilafi" price="$2.00" location="Food Lines" description="Fluffy and soft, not sticky, rice that has been boiled in a lemon and chicked boullion broth.">Description 9</food>
+    <food name="Salad" fullname="Greek Salad" price="$1.75" location="Food Lines" description="Served with, lettuce, tomato, cucumber, feta cheese, and kalamata olives, dressed with olive oil and vinegar.">Description 10</food>
+    <food name="Kalamari" fullname="Kalamari" price="$3.50" location="Food Lines" description="Squid rings and arms coated in batter and deep fried.">Description 1</food>
+    <food name="Keftethes" fullname="Keftethes" price="$1.50 or 2 for $2.75" location="Food Lines" description="Baked meatballs with oregano and mint in tomato sauce.">Description 2</food>
+    <food name="Stifatho" fullname="Stifatho" price="#3.50" location="Food Lines" description="Beef stew with pearl onions, vinegar, red wine and cinnamon.">Description 3</food>
+    <food name="Pastitsio" fullname="Pastitsio" price="$4.50" location="Food Lines" description="A baked pasta dish with a filling of ground meat and a Bechamel sauce top.">Description 5</food>
+    <food name="Tiropita" fullname="Tyropita" price="$3.50" location="Special Booth" description="Cheese wrapped and baked in phyllo pastry.">Description 5</food>
+    <food name="Loukoumades" fullname="Loukoumades" price="$5.00" location="Special Booth" description="Similar to donut, Loukoumade are fried calls of dough drenched in honey and sprinkled with cinnamon.">Description 7</food>
+    <food name="Fries" fullname="Greek Fries" price="#3.00" location="Special Booth" description="Fries sprinkled with feta cheese, lemon juice and pepper.">Description 8</food>
+    <food name="Loukaniko" fullname="Louakaniko" price="$4.50" location="Special Booth" description="A greek pork sausage flavored with fennel seeds and orange peel.">Description 9</food>
+    <food name="Lamb" fullname="Lamb" price="$15.00/Dinner or $12.00/A la carte" location="Special Booth" description="Lamb roasted on a spit or cooked on a barbeque">Description 10</food>
+    <food name="Baklava"  fullname="Baklava" price="#3.50" location="Pastry Lines" description="A rich sweet pastry made of layers of phyllo dough filled with chopped nuts and sweetened with syrup or honey.">Description 1</food>
+    <food name="Melomakarona" fullname="Melomakarona" price="$2.50" location="Pastry Lines" description="Cookies soaked in a syrup of diluted honey then sprinkled with crushed walnuts">Description 2</food>
+    <food name="Koulourakia" fullname="Koulourakia" price="$6.00" location="Pastry Lines" description="Butter cookies.">Description 3</food>
+    <food name="Kourabiedes" fullname="Kourabiedes" price="$2.25" location="Pastry Lines" description="Cookies, butter and crushed roasted almonds, then dusted with powdered sugar.">Description 4</food>
+    <food name="Kataifi" fullname="Kataifi" price="$3.50" location="Pastry Lines" description="A sweet made of very fine vermicelli-like pastry. It is sometimes known as shredded phyllo.">Description 5</food>
+    <food name="PastaFlora" fullname="Pasta Flora" price="$2.25" location="Pastry Lines" description="Jam tarts, can be made in all sizes">Description 6</food>
+    <food name="Galatopita" fullname="Galatopita" price="$2.50" location="Pastry Lines" description="The Sweet galatopita Greek custard leaves a wonderful taste in your mouth.">Description 7</food>
+    <food name="Amigdalota" fullname="Amigdalota" price="$2.50" location="Pastry Lines" description="Almond Cookies">Description 8</food>
+    <food name="Diples" fullname="Diples" price="$2.50" location="Pastry Lines" description="Thin sheets of phyllo dough deep fried and dipped in syrup.">Description 8</food>
+    <food name="Flogeres" fullname="Flogeres" price="$2.00" location="Pastry Lines" description="Sweet cheeses wrapped in phyllo dough.">Description 8</food>
+    <food name="Galaktoboureko" fullname="Galaktoboureko" price="$3.50" location="Pastry Lines" description="Custard and phyllo dough served with a sweet syrup">Description 8</food>
 </array>

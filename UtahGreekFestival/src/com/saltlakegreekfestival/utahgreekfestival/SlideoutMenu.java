@@ -21,7 +21,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.gson.Gson;
 
-public class ColorMenuFragment extends ListFragment {
+public class SlideoutMenu extends ListFragment {
 
 	MarkerOptions[] mos;
 	
@@ -46,13 +46,13 @@ public class ColorMenuFragment extends ListFragment {
 		case 0:
 		    newContent = new Schedule();
 			break;
+		//case 1:
+			//newContent = buildMap();
+			//break;
 		case 1:
-			newContent = buildMap();
-			break;
-		case 2:
 			newContent = new Food();
 			break;
-		case 3:
+		case 2:
 			newContent = new Coupons();
 			break;
 		}

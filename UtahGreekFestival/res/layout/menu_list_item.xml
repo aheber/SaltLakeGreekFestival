@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal" >
-    
+   
+     
     <ImageView
         android:id="@+id/menuicon"
         android:layout_height="25dp"
@@ -12,7 +13,7 @@
         android:layout_gravity="center_vertical"
         android:paddingRight="5dp"
         />
-    
+        
     <TextView
         android:id="@+id/menutitle"
         android:layout_width="fill_parent" 

@@ -111,7 +111,7 @@ public class MainActivity extends BaseActivity {
 		setBehindContentView(R.layout.menu_frame);
 		getSupportFragmentManager()
 		.beginTransaction()
-		.replace(R.id.menu_frame, new ColorMenuFragment())
+		.replace(R.id.menu_frame, new SlideoutMenu())
 		.commit();
 
 		// customize the SlidingMenu

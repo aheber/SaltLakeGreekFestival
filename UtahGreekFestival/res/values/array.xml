@@ -3,9 +3,8 @@
 
     <string-array name="color_names">
         <item>SCHEDULE</item>
-        <item>MAP</item>
         <item>FOOD</item>
-        <item>COUPONS</item>
+        <item>COUPON</item>
     </string-array>
 
     

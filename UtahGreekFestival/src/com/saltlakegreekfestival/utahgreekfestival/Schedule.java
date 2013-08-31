@@ -3,14 +3,12 @@ package com.saltlakegreekfestival.utahgreekfestival;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -22,15 +20,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.ActionBar.Tab;
 import com.actionbarsherlock.app.SherlockFragment;
 import com.actionbarsherlock.app.SherlockListFragment;
-import com.saltlakegreekfestival.utahgreekfestival.Recipes.Day;
-import com.saltlakegreekfestival.utahgreekfestival.Recipes.FestivalDay;
-import com.saltlakegreekfestival.utahgreekfestival.Recipes.MyTabsListener;
 
 public class Schedule extends SherlockFragment {
 	String TAG = this.getTag();
@@ -69,10 +63,8 @@ public class Schedule extends SherlockFragment {
 	public void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
-		if(mActionBar == null)
-			mActionBar = getSherlockActivity().getSupportActionBar();
-		if(mActionBar.getTabCount() == 0)
-			buildTabs();
+		mActionBar.removeAllTabs();
+		buildTabs();
 	}
 
 	@Override

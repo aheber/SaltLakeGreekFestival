@@ -15,32 +15,19 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragment;
 
 public class Food extends SherlockFragment implements OnItemClickListener {
 	
-	ArrayList<FoodItem> foodlist = null;
-
-	// references to our images
-	/*
-	private Integer[] mThumbIds = { R.drawable.gyro,
-			R.drawable.souvlaki, R.drawable.keftethes, R.drawable.pilafi,
-			R.drawable.fasolakia, R.drawable.pastitsio, R.drawable.spanokopites,
-			R.drawable.tiropita, R.drawable.dolmathes, R.drawable.salad, R.drawable.feta, R.drawable.olives
-			};
-	*/
-	
+	ArrayList<FoodItem> foodlist = null;	
 			
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,

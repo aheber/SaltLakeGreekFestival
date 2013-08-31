@@ -91,8 +91,12 @@ public class Schedule extends SherlockFragment {
 		}
 		// ActionBar gets initiated
 		mActionBar = getSherlockActivity().getSupportActionBar();
-		if(mActionBar.getTabCount() == 0)
+		try{
+			if(mActionBar.getTabCount() == 0)
+				buildTabs();
+		} catch (NullPointerException e){
 			buildTabs();
+		}
 
 		return v;
 	}
@@ -203,10 +207,8 @@ public class Schedule extends SherlockFragment {
 			// instead of the following if/else if lines
 			// you should custom parse your xml
 			if (eventType == XmlPullParser.START_DOCUMENT) {
-				Log.d("SCHED", "Start document");
 			} else if (eventType == XmlPullParser.START_TAG) {
 				tagName = xpp.getName();
-				Log.d("SCHED", "Start tag " + tagName);
 				if (tagName.equals("day")) {
 					fd = new FestivalDay(xpp.getAttributeValue(null, "name"));
 					// festival.add(xpp.getAttributeValue(null, "name"));
@@ -223,9 +225,7 @@ public class Schedule extends SherlockFragment {
 				if (xpp.getName().equals("day")) {
 					festDays.add(fd);
 				}
-				Log.d("SCHED", "End tag " + xpp.getName());
 			} else if (eventType == XmlPullParser.TEXT) {
-				Log.d("SCHED", "Text " + xpp.getText());
 			}
 			eventType = xpp.next();
 		}

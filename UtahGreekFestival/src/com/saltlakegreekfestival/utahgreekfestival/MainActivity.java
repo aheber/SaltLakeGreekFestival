@@ -1,5 +1,22 @@
 package com.saltlakegreekfestival.utahgreekfestival;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.util.ArrayList;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+import org.xmlpull.v1.XmlPullParserFactory;
+
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -20,8 +37,10 @@ public class MainActivity extends BaseActivity {
 
 	private Fragment mContent;
 	private String TAG = "MainActivity";
-    private static String[] adverts= null;
+    //private static String[] adverts= null;
     private static final int SCROLL_FREQUENCY = 10000;
+    private static float AD_METRIC = 0.09259259259259f;
+    private ArrayList<Advertisement> advertisements;
     /**
      * The pager widget, which handles animation and allows swiping horizontally to access previous
      * and next wizard steps.
@@ -50,7 +69,7 @@ public class MainActivity extends BaseActivity {
       {
           int curPge = mPager.getCurrentItem();
           int nextPge = 0;
-          if(curPge >= adverts.length-1)
+          if(curPge >= advertisements.size()-1)
         	  nextPge = 0;
     	  else 
     		  nextPge = curPge+1;
@@ -116,22 +135,30 @@ public class MainActivity extends BaseActivity {
 
 		// customize the SlidingMenu
 		getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
-		
-		adverts = this.getResources().getStringArray(R.array.advetisements);
+		try {
+			advertisements = buildAds();
+		} catch (XmlPullParserException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//adverts = this.getResources().getStringArray(R.array.advetisements);
         // Instantiate a ViewPager and a PagerAdapter.
         mPager = (ViewPager) findViewById(R.id.pager);
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
-        mPager.setOffscreenPageLimit(adverts.length-1);
+        mPager.setOffscreenPageLimit(advertisements.size()-1);
         mPager.setPageMargin(0);
         //runnable.run();
         DisplayMetrics metrics = getResources().getDisplayMetrics();
         LayoutParams lp = mPager.getLayoutParams();
         
-        lp.height = (int) Math.max(metrics.widthPixels*0.10416666666667, 1);
+        lp.height = (int) Math.ceil(metrics.widthPixels*AD_METRIC);
         FrameLayout fl = (FrameLayout) findViewById(R.id.content_frame);
         RelativeLayout.LayoutParams flparams = (RelativeLayout.LayoutParams)fl.getLayoutParams();
-        flparams.bottomMargin=(int) Math.max(metrics.widthPixels*0.10416666666667, 1);
+        flparams.bottomMargin=(int) Math.ceil(metrics.widthPixels*AD_METRIC);
 	}
 
 	@Override
@@ -168,16 +195,97 @@ public class MainActivity extends BaseActivity {
         @Override
         public Fragment getItem(int position) {
             AdFragment frag = new AdFragment();
-            int id = getResources().getIdentifier(adverts[position], "drawable", getPackageName());
-            frag.setDrawable(id);
+            frag.setDrawable(advertisements.get(position).getImage());
         	return frag;
         }
 
         @Override
         public int getCount() {
-            return adverts.length;
+            return advertisements.size();
         }
         
         
     }
+    
+    private ArrayList<Advertisement> buildAds()
+			throws XmlPullParserException, IOException {
+		ArrayList<Advertisement> ads = new ArrayList<Advertisement>();
+		XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
+		factory.setNamespaceAware(true);
+		XmlPullParser xpp = factory.newPullParser();
+		InputStream is = getResources().openRawResource(R.raw.sponsors);
+		xpp.setInput(is, "utf-8");
+		// check state
+		int eventType;
+		String tagName = "";
+		eventType = xpp.getEventType();
+		while (eventType != XmlPullParser.END_DOCUMENT) {
+			// instead of the following if/else if lines
+			// you should custom parse your xml
+			if (eventType == XmlPullParser.START_DOCUMENT) {
+			} else if (eventType == XmlPullParser.START_TAG) {
+				tagName = xpp.getName();
+				if (tagName.equals("sponsor")) {
+					Advertisement ad = new Advertisement(xpp.getAttributeValue(null, "image"));
+					ad.setImage(getResources().getIdentifier(xpp.getAttributeValue(null, "image").toLowerCase(), 
+							"drawable", getPackageName()));
+					ad.setUrl(xpp.getAttributeValue(null, "url"));
+					ad.setText(xpp.nextText());
+					ads.add(ad);
+				}
+			} else if (eventType == XmlPullParser.END_TAG) {
+			} else if (eventType == XmlPullParser.TEXT) {
+			}
+			eventType = xpp.next();
+		}
+		return ads;
+	}
+
+	class Advertisement {
+		String name;
+		int image;
+		String url;
+		String text;
+
+		public Advertisement(String name) {
+			this.name = name;
+		}
+		
+		public Advertisement(String name, int image) {
+			this.image = image;
+		}
+
+		public void setName(String name){
+			this.name = name;
+		}
+		
+		public String getName(){
+			return name;
+		}
+		
+		public void setImage(int image) {
+			this.image = image;
+		}
+		
+		public int getImage() {
+			return image;
+		}
+
+		public void setUrl(String url){
+			this.url = url;
+		}
+		
+		public String getUrl(){
+			return url;
+		}
+		
+		public void setText(String text){
+			this.text = text;
+		}
+		
+		public String getText(){
+			return text;
+		}
+	}
+
 }

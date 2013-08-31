@@ -129,8 +129,8 @@ public class Schedule extends SherlockFragment {
 
 		@Override
 		public void onListItemClick(ListView l, View v, int position, long id) {
-			// TODO Auto-generated method stub
 			super.onListItemClick(l, v, position, id);
+			/*
 			AlertDialog.Builder ad = new AlertDialog.Builder(getSherlockActivity());
 			LayoutInflater i = getSherlockActivity().getLayoutInflater();
 			View vw = i.inflate(R.layout.schedule_info,null);
@@ -144,6 +144,7 @@ public class Schedule extends SherlockFragment {
 			desc.setText(events.get(position).getDescription());
 			ad.setView(vw);
 			ad.show();
+			*/
 		}
 		
 		

@@ -69,6 +69,8 @@ public class Schedule extends SherlockFragment {
 	public void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
+		if(mActionBar == null)
+			mActionBar = getSherlockActivity().getSupportActionBar();
 		if(mActionBar.getTabCount() == 0)
 			buildTabs();
 	}

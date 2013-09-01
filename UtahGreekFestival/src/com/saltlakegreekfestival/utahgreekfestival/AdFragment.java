@@ -44,7 +44,10 @@ public class AdFragment extends Fragment {
 	}
 	
 	public ImageView getImageView(){
-		return (ImageView)this.getView().findViewById(R.id.advertimage);
+		if(this.getView() == null)
+			return null;
+		else
+			return (ImageView)this.getView().findViewById(R.id.advertimage);
 	}
 	public void setDrawable(Drawable myImage){
 		//ImageView image = (ImageView)myLayout.findViewById(R.id.advertimage);

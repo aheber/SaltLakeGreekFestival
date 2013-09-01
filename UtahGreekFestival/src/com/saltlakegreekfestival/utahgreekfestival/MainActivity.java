@@ -200,6 +200,7 @@ public class MainActivity extends BaseActivity {
 		@Override
 		public Fragment getItem(int position) {
 			AdFragment frag = new AdFragment();
+			frag.setUrl(advertisements.get(position).getUrl());
 			File adImage = new File(mContext.getFilesDir(),advertisements.get(position).getName()+".png");
 			InputStream is = null;
 			if(adImage.exists())

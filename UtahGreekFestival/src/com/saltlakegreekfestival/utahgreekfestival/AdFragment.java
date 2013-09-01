@@ -1,5 +1,8 @@
 package com.saltlakegreekfestival.utahgreekfestival;
 
+import java.io.File;
+
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,7 +14,8 @@ import android.widget.ImageView;
 
 public class AdFragment extends Fragment {
 	
-	Drawable myImage;
+	Drawable myImage = null;
+	File imageFile = null;
 	//int myImageId = R.drawable.roofers;
 	int myImageId = 0;
 	String TAG = "AdFragment";
@@ -26,15 +30,22 @@ public class AdFragment extends Fragment {
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 		Log.v(TAG,"Created ImageId: "+String.valueOf(myImageId));
-		this.myImage = this.getActivity().getResources().getDrawable(myImageId);
 		ImageView image = (ImageView)this.getView().findViewById(R.id.advertimage);
-		image.setImageDrawable(this.myImage);
+		if(imageFile != null)
+			image.setImageBitmap(BitmapFactory.decodeFile(imageFile.getPath()));
+		else {
+			this.myImage = this.getActivity().getResources().getDrawable(myImageId);
+			image.setImageDrawable(this.myImage);
+		}
 	}
 
 	public AdFragment() {
 		
 	}
 	
+	public ImageView getImageView(){
+		return (ImageView)this.getView().findViewById(R.id.advertimage);
+	}
 	public void setDrawable(Drawable myImage){
 		//ImageView image = (ImageView)myLayout.findViewById(R.id.advertimage);
 		//image.setImageDrawable(myImage);
@@ -49,6 +60,11 @@ public class AdFragment extends Fragment {
 	
 	public Drawable getDrawable(){
 		return this.myImage;
+	}
+
+	public void setDrawableFile(File adImage) {
+		this.imageFile = adImage;
+		
 	}
 	
 	

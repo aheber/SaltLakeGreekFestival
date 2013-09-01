@@ -1,5 +1,7 @@
 package com.saltlakegreekfestival.utahgreekfestival;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -56,7 +58,12 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 		XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
 		factory.setNamespaceAware(true);
 		XmlPullParser xpp = factory.newPullParser();
-		InputStream is = getResources().openRawResource(R.raw.food);
+		File sponsorsDL = new File(getActivity().getFilesDir(),"food.xml");
+		InputStream is = null;
+		if(sponsorsDL.exists())
+			is = new FileInputStream(sponsorsDL);
+		else
+			is = getResources().openRawResource(R.raw.food);
 		xpp.setInput(is, "utf-8");
 		// check state
 		int eventType;
@@ -89,6 +96,8 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 			}
 			eventType = xpp.next();
 		}
+		if(is != null)
+			is.close();
 		return foodinfo;
 	}
 	

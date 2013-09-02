@@ -43,9 +43,12 @@ public class Schedule extends SherlockFragment {
 			mActionBar.removeAllTabs();
 			mActionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
 		}
+		Log.d("Schedule","onStop");
 	}
 
 	public void buildTabs() {
+
+		Log.d("Schedule","buildTabs");
 		mActionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 		for (FestivalDay fd : festival) {
 			ActionBar.Tab tab = mActionBar.newTab().setText(fd.getName());
@@ -63,13 +66,26 @@ public class Schedule extends SherlockFragment {
 	public void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
+		Log.d("Schedule","onResume");
 		mActionBar.removeAllTabs();
+		try {
+			festival = buildEventLists();
+		} catch (XmlPullParserException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		buildTabs();
+		
 	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
+
+		Log.d("Schedule","onCreateView");
 		// TODO Auto-generated method stub
 		View v = inflater.inflate(R.layout.fragment_pager, container, false);
 		try {
@@ -83,13 +99,8 @@ public class Schedule extends SherlockFragment {
 		}
 		// ActionBar gets initiated
 		mActionBar = getSherlockActivity().getSupportActionBar();
-		try{
-			if(mActionBar.getTabCount() == 0)
-				buildTabs();
-		} catch (NullPointerException e){
+		if(mActionBar.getTabCount() == 0)
 			buildTabs();
-		}
-
 		return v;
 	}
 
@@ -104,6 +115,8 @@ public class Schedule extends SherlockFragment {
 
 		public void setEvents(ArrayList<FestivalEvent> events) {
 			this.events = events;
+
+			Log.d("Day","setEvents");
 		}
 
 		public String getName() {
@@ -113,10 +126,14 @@ public class Schedule extends SherlockFragment {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
+
+			Log.d("Day","onCreateView");
 			View v = inflater.inflate(R.layout.scheduletest, container, false);
 			View tv = new TextView(this.getSherlockActivity());
 			((TextView) tv).setText("Fragment #1 - " + myName);
 			Schedule sched = new Schedule();
+			if(events == null)
+				Log.e("Day","EVENTS IS NULL!!!!!");
 			DayListAdapter dla = sched.new DayListAdapter(
 					getSherlockActivity(), R.layout.childrow, events);
 			this.setListAdapter(dla);

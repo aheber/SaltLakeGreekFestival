@@ -69,6 +69,14 @@ public class MainActivity extends BaseActivity {
 		}
 	};
 
+	
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		super.onStop();
+		finish();
+	}
+
 	/** Called when the activity is first created. */
 
 	public void rotatePager() {

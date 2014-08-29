@@ -37,8 +37,10 @@ public class AdFragment extends Fragment {
 		if(imageFile != null)
 			image.setImageBitmap(BitmapFactory.decodeFile(imageFile.getPath()));
 		else {
-			this.myImage = this.getActivity().getResources().getDrawable(myImageId);
-			image.setImageDrawable(this.myImage);
+			if(myImageId > 0){
+				this.myImage = this.getActivity().getResources().getDrawable(myImageId);
+				image.setImageDrawable(this.myImage);
+			}
 		}
 		if(URL != null){
 			image.setOnClickListener(new View.OnClickListener(){

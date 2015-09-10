@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Salt Lake City Greek Festival</string>
+    <string name="app_name">Salt Lake Greek Festival</string>
     <string name="title_activity_main">Greek Festival</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="changing_fragments">Changing Fragments</string>
     <string name="greek_festival">Greek Festival</string>
-    <string name="gftitle">2013 SLC Greek Festival</string>
+    <string name="gftitle">2014 SLC Greek Festival</string>
     <string name="first">First</string>
     <string name="last">Last</string>
     <string name="event">Event Name</string>
@@ -17,5 +17,8 @@
     <string name="advertdesc">Advertisement</string>
     <string name="close">Close</string>
     <string name="couponhead">2 For 1 Admission</string>
-    <string name="coupontext">Present at entrance gate. Limit one per phone \n Only Valid September 5th - 8th</string>
+    <string name="coupontext">Present at entrance gate. Limit one per phone \n Only Valid September 5th - 7th</string>
+    <string name="racedate">"Monday September 1st\nSugarhouse Park 1400 E 2100 S"</string>
+	<string name="raceprice">"Registration Fee: $25"</string>
+	<string name="racereg">"Register Online"</string>
 </resources>

@@ -25,6 +25,7 @@ import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.ActionBar.Tab;
 import com.actionbarsherlock.app.SherlockFragment;
 import com.actionbarsherlock.app.SherlockListFragment;
+import com.aquifyre.saltlakegreekfestival.R;
 
 public class Recipes extends SherlockFragment {
     static final int NUM_ITEMS = 10;

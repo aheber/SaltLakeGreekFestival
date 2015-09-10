@@ -2,7 +2,7 @@
 <array>
     <food name="Chicken" fullname="Chicken" price="$4.50" location="Food Lines" description="Chicken marinated in herbs and spices and baked in an oil sauce.">Description 1</food>
     <food name="Dolmathes" fullname="Dolmathes" price="$1.50 each or 3 for $3.75" location="Food Lines" description="Grapevine leaves stuff with rice and vegetables, meat is also often included.">Description 1</food>
-    <food name="Gyro" fullname="Gyro" price="$4.50" location="Food Lines" description="Consists of meat, tomato, onion and tzatziki sauce and is served with pita bread.">Description 2</food>
+    <food name="Gyro" fullname="Gyro" price="$5.00" location="Food Lines" description="Consists of meat, tomato, onion and tzatziki sauce and is served with pita bread.">Description 2</food>
     <food name="Olives" fullname="Kalamata Olives" price="$1.25" location="Food Lines" description="Large, black olives with a smooth, meat like taste, are named after the city of Kalamata, Greece.">Description 3</food>
     <food name="Feta" fullname="Feta" price="$1.25" location="Food Lines" description="An Aged crumbly cheese.">Description 4</food>
     <food name="Souvlaki" fullname="Souvlaki" price="$4.00" location="Food Lines" description="Grilled on a skewer (chicken or pork), marinated in oil, salt, pepper, oregano and lemon.">Description 6</food>

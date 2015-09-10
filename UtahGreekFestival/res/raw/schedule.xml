@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <array name="schedule">
-	<day name="THURSDAY">
-		<event name="Festival Opens" time="4:00 PM" location="Main Stage">Description 1</event>
-		<event name="Children's Midway Opens" time="4:30 PM" location="Main Stage">Description 1</event>
-		<event name="Ribbon Cutting" time="5:00 PM" location="Main Stage">Description 1</event>
-		<event name="Dionysios Dancers" time="5:00 PM" location="Main Stage">Description 2</event>
-		<event name="Olympian Dancers" time="6:30 PM" location="Main Stage">Description 3</event>
-		<event name="Athenian Dancers" time="7:30 PM" location="Main Stage">Description 4</event>
-		<event name="Nightly Prizes" time="8:00 PM" location="Main Stage">Description 5</event>
-		<event name="Parthenon Dancers" time="8:30 PM" location="Main Stage">Description 5</event>
-		<event name="Dionysios Dancers" time="9:30 PM" location="Main Stage">Description 6</event>
-		<event name="Festival Closes" time="11:00 PM" location="Main Stage">Description 7</event>
-	</day>
 	<day name="FRIDAY">
 		<event name="Festival Opens" time="11:00 AM" location="Main Stage">Description 11</event>
-		<event name="St. Sophia School Choir" time="2:30 PM" location="Main Stage">Description 12</event>
 		<event name="Children's Midway Opens" time="3:00 PM" location="Main Stage">Description 13</event>
 		<event name="Parthenon Dancers" time="3:30 PM" location="Main Stage">Description 15</event>
 		<event name="Athenian Dancers" time="4:00 PM" location="Main Stage">Description 14</event>

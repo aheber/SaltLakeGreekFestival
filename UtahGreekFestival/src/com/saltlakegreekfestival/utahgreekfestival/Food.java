@@ -26,6 +26,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockFragment;
+import com.aquifyre.saltlakegreekfestival.R;
 
 public class Food extends SherlockFragment implements OnItemClickListener {
 	

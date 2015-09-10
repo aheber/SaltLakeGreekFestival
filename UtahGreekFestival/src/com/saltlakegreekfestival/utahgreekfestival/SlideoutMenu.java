@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
+import com.aquifyre.saltlakegreekfestival.R;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMapOptions;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -53,6 +54,9 @@ public class SlideoutMenu extends ListFragment {
 			break;
 		case 2:
 			newContent = new Coupons();
+			break;
+		case 3: 
+			newContent = new Race();
 			break;
 		}
 		if (newContent != null)

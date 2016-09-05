@@ -11,6 +11,7 @@ import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import android.app.AlertDialog;
+import android.app.Fragment;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -25,10 +26,9 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.SherlockFragment;
 import com.aquifyre.saltlakegreekfestival.R;
 
-public class Food extends SherlockFragment implements OnItemClickListener {
+public class Food extends Fragment implements OnItemClickListener {
 	
 	ArrayList<FoodItem> foodlist = null;	
 			
@@ -47,7 +47,7 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 
 		View v = inflater.inflate(R.layout.foodgrid,container,false);
 		GridView gridview = (GridView) v.findViewById(R.id.gridview);
-		gridview.setAdapter(new ImageAdapter(getSherlockActivity()));
+		gridview.setAdapter(new ImageAdapter(getActivity()));
 		
 		gridview.setOnItemClickListener(this);
 		return v;
@@ -83,8 +83,8 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 					FoodItem fi = new FoodItem();
 					fi.setName(xpp.getAttributeValue(null, "name"));
 					fi.setFullName(xpp.getAttributeValue(null, "fullname"));
-					fi.setImg(this.getSherlockActivity().getResources().getIdentifier(fi.getName().toLowerCase(), "drawable", getSherlockActivity().getPackageName()));
-					fi.setSmImg(this.getSherlockActivity().getResources().getIdentifier("sm_"+fi.getName().toLowerCase(), "drawable", getSherlockActivity().getPackageName()));
+					fi.setImg(this.getActivity().getResources().getIdentifier(fi.getName().toLowerCase(), "drawable", getActivity().getPackageName()));
+					fi.setSmImg(this.getActivity().getResources().getIdentifier("sm_"+fi.getName().toLowerCase(), "drawable", getActivity().getPackageName()));
 					fi.setPrice(xpp.getAttributeValue(null, "price"));
 					fi.setLocation(xpp.getAttributeValue(null, "location"));
 					fi.setDescription(xpp.getAttributeValue(null, "description"));
@@ -129,7 +129,7 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 			if (convertView == null) { // if it's not recycled, initialize some
 										// attributes
 				
-				final float scale = getSherlockActivity().getResources().getDisplayMetrics().density;
+				final float scale = getActivity().getResources().getDisplayMetrics().density;
 				int pixels = (int) (95 * scale + 0.5f);
 				imageView = new ImageView(mContext);
 				imageView.setLayoutParams(new GridView.LayoutParams(pixels, pixels));
@@ -152,8 +152,8 @@ public class Food extends SherlockFragment implements OnItemClickListener {
 
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-		AlertDialog.Builder ad = new AlertDialog.Builder(getSherlockActivity());
-		LayoutInflater i = getSherlockActivity().getLayoutInflater();
+		AlertDialog.Builder ad = new AlertDialog.Builder(getActivity());
+		LayoutInflater i = getActivity().getLayoutInflater();
 		View vw = i.inflate(R.layout.foodinfo,null);
 		TextView name = (TextView)vw.findViewById(R.id.foodname);
 		TextView price = (TextView)vw.findViewById(R.id.price);

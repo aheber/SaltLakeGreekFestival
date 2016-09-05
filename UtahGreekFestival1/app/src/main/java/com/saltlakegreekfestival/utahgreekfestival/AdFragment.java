@@ -2,12 +2,13 @@ package com.saltlakegreekfestival.utahgreekfestival;
 
 import java.io.File;
 
+import android.app.Fragment;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.support.v4.content.res.ResourcesCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,7 +40,8 @@ public class AdFragment extends Fragment {
 			image.setImageBitmap(BitmapFactory.decodeFile(imageFile.getPath()));
 		else {
 			if(myImageId > 0){
-				this.myImage = this.getActivity().getResources().getDrawable(myImageId);
+				this.myImage = ResourcesCompat.getDrawable(getResources(), myImageId, null);
+				//this.myImage = this.getActivity().getResources().getDrawable(myImageId);
 				image.setImageDrawable(this.myImage);
 			}
 		}

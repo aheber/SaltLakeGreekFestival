@@ -1,12 +1,12 @@
 package com.saltlakegreekfestival.utahgreekfestival;
 
 
+import android.app.FragmentTransaction;
+import android.app.ListFragment;
 import android.os.Bundle;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.app.ListFragment;
+import android.view.Menu;
+import android.view.MenuItem;
 
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
 import com.aquifyre.saltlakegreekfestival.R;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
@@ -29,12 +29,12 @@ public class BaseActivity extends SlidingFragmentActivity {
 		// set the Behind View
 		setBehindContentView(R.layout.menu_frame);
 		if (savedInstanceState == null) {
-			FragmentTransaction t = this.getSupportFragmentManager().beginTransaction();
+			FragmentTransaction t = this.getFragmentManager().beginTransaction();
 			mFrag = new SampleListFragment();
 			t.replace(R.id.menu_frame, mFrag);
 			t.commit();
 		} else {
-			mFrag = (ListFragment)this.getSupportFragmentManager().findFragmentById(R.id.menu_frame);
+			mFrag = (ListFragment)this.getFragmentManager().findFragmentById(R.id.menu_frame);
 		}
 
 		// customize the SlidingMenu
@@ -45,8 +45,8 @@ public class BaseActivity extends SlidingFragmentActivity {
 		sm.setFadeDegree(0.35f);
 		sm.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
 		//sm.setBackgroundColor(0xFF000000);
-
-		getActionBar().setDisplayHomeAsUpEnabled(true);
+		if(getActionBar() != null)
+			getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 
 	@Override

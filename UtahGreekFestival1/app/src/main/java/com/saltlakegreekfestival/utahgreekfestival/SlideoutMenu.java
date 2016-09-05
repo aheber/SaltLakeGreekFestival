@@ -3,9 +3,9 @@ package com.saltlakegreekfestival.utahgreekfestival;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+import android.app.Fragment;
+import android.app.ListFragment;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.ListFragment;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +15,7 @@ import android.widget.ListView;
 import com.aquifyre.saltlakegreekfestival.R;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMapOptions;
-import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -82,7 +82,7 @@ public class SlideoutMenu extends ListFragment {
 		float cameraStartZoom = tempVal.getFloat();
 		mGMapOpts.camera(CameraPosition.fromLatLngZoom(new LatLng(cameraStartLat, cameraStartLng), cameraStartZoom));
 		
-		SupportMapFragment myMap = SupportMapFragment.newInstance(mGMapOpts);
+		MapFragment myMap = MapFragment.newInstance(mGMapOpts);
 		//pre-commit map to allow us to capture it and add markers.
 		switchFragment(myMap);
 		GoogleMap map = myMap.getMap();

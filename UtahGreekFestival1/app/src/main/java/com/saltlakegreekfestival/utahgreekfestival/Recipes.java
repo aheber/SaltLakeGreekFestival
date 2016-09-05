@@ -8,11 +8,13 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
+import android.app.ActionBar;
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
+import android.app.ListFragment;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,13 +23,9 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.ActionBar.Tab;
-import com.actionbarsherlock.app.SherlockFragment;
-import com.actionbarsherlock.app.SherlockListFragment;
 import com.aquifyre.saltlakegreekfestival.R;
 
-public class Recipes extends SherlockFragment {
+public class Recipes extends Fragment {
     static final int NUM_ITEMS = 10;
     String TAG = this.getTag();
     ActionBar mActionBar;
@@ -75,7 +73,7 @@ public class Recipes extends SherlockFragment {
 			e.printStackTrace();
 		}
       //ActionBar gets initiated
-        mActionBar = getSherlockActivity().getSupportActionBar();
+        mActionBar = getActivity().getActionBar();
       //Tell the ActionBar we want to use Tabs.
       //instantiate a tab for each "day" in the xml populate the tab's listview with the events 
         buildTabs();
@@ -94,7 +92,7 @@ public class Recipes extends SherlockFragment {
             days.add(day);
         }
 	}
-    public static class Day extends SherlockListFragment {
+    public static class Day extends ListFragment {
         int mNum;
         String myName;
         ArrayList<FestivalEvent> events = null;
@@ -116,10 +114,10 @@ public class Recipes extends SherlockFragment {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
         	View v = inflater.inflate(R.layout.scheduletest, container, false);
-            View tv = new TextView(this.getSherlockActivity());
+            View tv = new TextView(this.getActivity());
             ((TextView)tv).setText("Fragment #1 - "+myName);
             Recipes rec = new Recipes();
-            DayListAdapter dla = rec.new DayListAdapter(getSherlockActivity(),R.layout.childrow,events);
+            DayListAdapter dla = rec.new DayListAdapter(getActivity(),R.layout.childrow,events);
             this.setListAdapter(dla);
             return v;
         }
@@ -133,7 +131,7 @@ public class Recipes extends SherlockFragment {
         }
 
         @Override
-        public void onTabSelected(Tab tab, FragmentTransaction ft) {
+        public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
             // TODO Auto-generated method stub
             if (fragment == null) {
                 Log.v(TAG, "fragment is null");
@@ -147,20 +145,18 @@ public class Recipes extends SherlockFragment {
         }
 
         @Override
-        public void onTabUnselected(Tab tab, FragmentTransaction ft) {
+        public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {
             // TODO Auto-generated method stub
 
         }
 
         @Override
-        public void onTabReselected(Tab tab, FragmentTransaction ft) {
+        public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft) {
             // TODO Auto-generated method stub
-            Toast.makeText(getSherlockActivity(), "Reselected!", Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(), "Reselected!", Toast.LENGTH_LONG).show();
 
         }
-
-
-    }
+	}
     
     private ArrayList<FestivalDay> buildEventLists() throws XmlPullParserException, IOException{
 		ArrayList<FestivalDay> festDays = new ArrayList<FestivalDay>();

@@ -1,8 +1,8 @@
 package com.saltlakegreekfestival.utahgreekfestival;
 
-import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.MapFragment;
 
-public class FestivalMap extends SupportMapFragment {
+public class FestivalMap extends MapFragment {
 
 	public FestivalMap() {
 

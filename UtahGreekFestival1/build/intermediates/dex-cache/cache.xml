@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Heber\Documents\GitHub\SaltLakeGreekFestival\UtahGreekFestival1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="2d89767b1747729206cd99d6b37163f750ae11eb">
+        <dex dex="C:\Users\Heber\Documents\GitHub\SaltLakeGreekFestival\UtahGreekFestival1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_60f5c104d91a4760f88c1c6034a9fa7bba329f63\classes.dex" />
+    </item>
+
+</items>

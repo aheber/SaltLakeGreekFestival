@@ -9,7 +9,7 @@
         android:id="@+id/eventlisttext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp" 
+        android:textSize="16sp"
         android:paddingLeft="45dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"

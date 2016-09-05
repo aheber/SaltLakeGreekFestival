@@ -18,14 +18,14 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v13.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.DisplayMetrics;
@@ -46,7 +46,8 @@ public class MainActivity extends BaseActivity {
 	// private static String[] adverts= null;
 	private static final int SCROLL_FREQUENCY = 10000;
 	private static float AD_METRIC = 0.09259259259259f;
-	private static final String AWS_URL = "http://slcgreekfestival.s3-website-us-west-2.amazonaws.com/";
+	//private static final String AWS_URL = "http://slcgreekfestival.s3-website-us-west-2.amazonaws.com/";
+	private static final String AWS_URL = "https://s3-us-west-2.amazonaws.com/slcgreekfestival/";
 	private ArrayList<Advertisement> advertisements;
 	private Context mContext;
 	/**
@@ -125,7 +126,7 @@ public class MainActivity extends BaseActivity {
 		super.onCreate(savedInstanceState);
 		// set the Above View
 		if (savedInstanceState != null)
-			mContent = getSupportFragmentManager().getFragment(
+			mContent = getFragmentManager().getFragment(
 					savedInstanceState, "mContent");
 		if (mContent == null)
 			mContent = new Schedule(); // Open to Schedule fragment
@@ -137,12 +138,12 @@ public class MainActivity extends BaseActivity {
 		fd.execute("food.xml");
 		// set the Above View
 		setContentView(R.layout.content_frame);
-		getSupportFragmentManager().beginTransaction()
+		getFragmentManager().beginTransaction()
 				.replace(R.id.content_frame, mContent).commit();
 
 		// set the Behind View
 		setBehindContentView(R.layout.menu_frame);
-		getSupportFragmentManager().beginTransaction()
+		getFragmentManager().beginTransaction()
 				.replace(R.id.menu_frame, new SlideoutMenu()).commit();
 
 		// customize the SlidingMenu
@@ -164,7 +165,7 @@ public class MainActivity extends BaseActivity {
 		// adverts = this.getResources().getStringArray(R.array.advetisements);
 		// Instantiate a ViewPager and a PagerAdapter.
 		mPager = (ViewPager) findViewById(R.id.pager);
-		mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
+		mPagerAdapter = new ScreenSlidePagerAdapter(getFragmentManager());
 		mPager.setAdapter(mPagerAdapter);
 		mPager.setOffscreenPageLimit(advertisements.size() - 1);
 		mPager.setPageMargin(0);
@@ -183,7 +184,7 @@ public class MainActivity extends BaseActivity {
 	@Override
 	public void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
-		getSupportFragmentManager().putFragment(outState, "mContent", mContent);
+		getFragmentManager().putFragment(outState, "mContent", mContent);
 	}
 
 	@Override
@@ -195,9 +196,9 @@ public class MainActivity extends BaseActivity {
 
 	public void switchContent(Fragment fragment) {
 		mContent = fragment;
-		getSupportFragmentManager().beginTransaction()
+		getFragmentManager().beginTransaction()
 				.replace(R.id.content_frame, fragment).commit();
-		getSupportFragmentManager().executePendingTransactions();
+		getFragmentManager().executePendingTransactions();
 		getSlidingMenu().showContent();
 	}
 
@@ -211,6 +212,7 @@ public class MainActivity extends BaseActivity {
 			AdFragment frag = new AdFragment();
 			frag.setUrl(advertisements.get(position).getUrl());
 			File adImage = new File(mContext.getFilesDir(),advertisements.get(position).getName()+".png");
+			Log.v(TAG,"Image:"+advertisements.get(position).getName()+".png");
 			InputStream is = null;
 			if(adImage.exists())
 				frag.setDrawableFile(adImage);

@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_pager.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\fragment_pager.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\race.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\race.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\parentrow.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\parentrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\schedule_info.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\schedule_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\scheduletest.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\scheduletest.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\adfragmentlayout.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\adfragmentlayout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\content_frame.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\content_frame.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\indvidual_recipe.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\indvidual_recipe.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\menu_list_item.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\menu_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\schedule.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\schedule.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\row.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_pager_list.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\fragment_pager_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\foodgrid.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\foodgrid.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\list.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\foodinfo.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\foodinfo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\coupon.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\coupon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\childrow.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\childrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\build\\intermediates\\res\\merged\\debug\\layout\\menu_frame.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival\\res\\layout\\menu_frame.xml"
+    }
+]

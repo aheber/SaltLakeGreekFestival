@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival1\\app\\build\\intermediates\\res\\merged\\debug\\raw\\sponsors.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival1\\app\\src\\main\\res\\raw\\sponsors.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival1\\app\\build\\intermediates\\res\\merged\\debug\\raw\\schedule.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival1\\app\\src\\main\\res\\raw\\schedule.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival1\\app\\build\\intermediates\\res\\merged\\debug\\raw\\food.xml",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival1\\app\\src\\main\\res\\raw\\food.xml"
+    },
+    {
+        "merged": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival1\\app\\build\\intermediates\\res\\merged\\debug\\raw\\festivalmap.json",
+        "source": "C:\\Users\\Heber\\Documents\\GitHub\\SaltLakeGreekFestival\\UtahGreekFestival1\\app\\src\\main\\res\\raw\\festivalmap.json"
+    }
+]

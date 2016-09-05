@@ -1,0 +1,420 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gradle\
+* .gradle\2.14.1\
+* .gradle\2.14.1\taskArtifacts\
+* .gradle\2.14.1\taskArtifacts\cache.properties
+* .gradle\2.14.1\taskArtifacts\cache.properties.lock
+* .gradle\2.14.1\taskArtifacts\fileSnapshots.bin
+* .gradle\2.14.1\taskArtifacts\fileSnapshotsToTreeSnapshotsIndex.bin
+* .gradle\2.14.1\taskArtifacts\taskArtifacts.bin
+* .idea\
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* build\
+* build\generated\
+* build\generated\source\
+* build\generated\source\buildConfig\
+* build\generated\source\buildConfig\buildConfig.iml
+* build\generated\source\buildConfig\debug\
+* build\generated\source\buildConfig\debug\com\
+* build\generated\source\buildConfig\debug\com\aquifyre\
+* build\generated\source\buildConfig\debug\com\aquifyre\saltlakegreekfestival\
+* build\generated\source\buildConfig\debug\com\aquifyre\saltlakegreekfestival\BuildConfig.java
+* build\generated\source\r\
+* build\generated\source\r\debug\
+* build\generated\source\r\debug\com\
+* build\generated\source\r\debug\com\aquifyre\
+* build\generated\source\r\debug\com\aquifyre\saltlakegreekfestival\
+* build\generated\source\r\debug\com\aquifyre\saltlakegreekfestival\Manifest.java
+* build\generated\source\r\debug\com\aquifyre\saltlakegreekfestival\R.java
+* build\generated\source\r\r.iml
+* build\intermediates\
+* build\intermediates\blame\
+* build\intermediates\blame\res\
+* build\intermediates\blame\res\debug\
+* build\intermediates\blame\res\debug\multi\
+* build\intermediates\blame\res\debug\multi\values-sw720dp-land-v13.json
+* build\intermediates\blame\res\debug\multi\values-v11.json
+* build\intermediates\blame\res\debug\multi\values-v14.json
+* build\intermediates\blame\res\debug\multi\values.json
+* build\intermediates\blame\res\debug\single\
+* build\intermediates\blame\res\debug\single\drawable-hdpi-v4.json
+* build\intermediates\blame\res\debug\single\drawable-ldpi-v4.json
+* build\intermediates\blame\res\debug\single\drawable-mdpi-v4.json
+* build\intermediates\blame\res\debug\single\drawable-xhdpi-v4.json
+* build\intermediates\blame\res\debug\single\drawable-xxhdpi-v4.json
+* build\intermediates\blame\res\debug\single\drawable.json
+* build\intermediates\blame\res\debug\single\layout.json
+* build\intermediates\blame\res\debug\single\menu.json
+* build\intermediates\blame\res\debug\single\raw.json
+* build\intermediates\incremental-safeguard\
+* build\intermediates\incremental-safeguard\debug\
+* build\intermediates\incremental-safeguard\debug\tag.txt
+* build\intermediates\incremental\
+* build\intermediates\incremental\compileDebugAidl\
+* build\intermediates\incremental\compileDebugAidl\dependency.store
+* build\intermediates\incremental\mergeDebugAssets\
+* build\intermediates\incremental\mergeDebugAssets\merger.xml
+* build\intermediates\incremental\mergeDebugResources\
+* build\intermediates\incremental\mergeDebugResources\merger.xml
+* build\intermediates\incremental\mergeDebugShaders\
+* build\intermediates\incremental\mergeDebugShaders\merger.xml
+* build\intermediates\manifests\
+* build\intermediates\manifests\full\
+* build\intermediates\manifests\full\debug\
+* build\intermediates\manifests\full\debug\AndroidManifest.xml
+* build\intermediates\res\
+* build\intermediates\res\merged\
+* build\intermediates\res\merged\debug\
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\coupon.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\food.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\gflogo.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\ic_launcher.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\race.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\schedule.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_amigdalota.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_baklava.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_chicken.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_diples.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_dolmathes.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_fasolakia.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_feta.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_flogeres.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_fries.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_galaktoboureko.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_galatopita.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_gyro.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_kataifi.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_keftethes.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_koulourakia.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_kourabiedes.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_lamb.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_loukaniko.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_loukoumades.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_melomakarona.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_olives.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_pastaflora.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_pastitsio.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_pilafi.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_salad.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_souvlaki.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_spanokopita.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_stifatho.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_tiropita.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_tzatziki.png
+* build\intermediates\res\merged\debug\drawable-hdpi-v4\sm_yogurt.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\coupon.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\food.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\race.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\schedule.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_amigdalota.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_baklava.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_chicken.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_diples.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_dolmathes.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_fasolakia.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_feta.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_flogeres.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_fries.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_galaktoboureko.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_galatopita.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_gyro.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_kalamari.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_kataifi.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_keftethes.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_koulourakia.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_kourabiedes.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_lamb.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_loukaniko.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_loukoumades.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_melomakarona.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_olives.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_pastaflora.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_pastitsio.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_pilafi.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_salad.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_souvlaki.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_spanokopita.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_stifatho.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_tiropita.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_tzatziki.png
+* build\intermediates\res\merged\debug\drawable-ldpi-v4\sm_yogurt.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\coupon.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\food.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\gflogo.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\ic_launcher.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\race.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\schedule.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_amigdalota.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_baklava.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_chicken.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_diples.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_dolmathes.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_fasolakia.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_feta.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_flogeres.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_fries.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_galaktoboureko.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_galatopita.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_gyro.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_kalamari.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_kataifi.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_keftethes.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_koulourakia.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_kourabiedes.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_lamb.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_loukaniko.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_loukoumades.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_melomakarona.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_olives.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_pastaflora.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_pastitsio.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_pilafi.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_salad.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_souvlaki.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_spanokopita.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_stifatho.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_tiropita.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_tzatziki.png
+* build\intermediates\res\merged\debug\drawable-mdpi-v4\sm_yogurt.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\coupon.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\coupons.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\food.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\gflogo.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\ic_launcher.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\race.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\schedule.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_amigdalota.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_baklava.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_chicken.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_diples.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_dolmathes.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_fasolakia.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_feta.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_flogeres.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_fries.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_galaktoboureko.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_galatopita.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_gyro.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_kalamari.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_kataifi.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_keftethes.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_koulourakia.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_kourabiedes.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_lamb.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_loukaniko.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_loukoumades.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_melomakarona.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_olives.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_pastaflora.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_pastitsio.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_pilafi.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_salad.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_souvlaki.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_spanokopita.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_stifatho.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_tiropita.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_tzatziki.png
+* build\intermediates\res\merged\debug\drawable-xhdpi-v4\sm_yogurt.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\coupon.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\food.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\gflogo.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\ic_launcher.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\race.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\schedule.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_amigdalota.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_baklava.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_chicken.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_diples.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_dolmathes.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_fasolakia.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_feta.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_flogeres.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_fries.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_galaktoboureko.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_galatopita.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_gyro.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_kalamari.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_kataifi.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_keftethes.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_koulourakia.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_kourabiedes.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_lamb.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_loukaniko.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_loukoumades.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_melomakarona.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_olives.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_pastaflora.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_pastitsio.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_pilafi.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_salad.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_souvlaki.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_spanokopita.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_stifatho.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_tiropita.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_tzatziki.png
+* build\intermediates\res\merged\debug\drawable-xxhdpi-v4\sm_yogurt.png
+* build\intermediates\res\merged\debug\drawable\
+* build\intermediates\res\merged\debug\drawable\amigdalota.png
+* build\intermediates\res\merged\debug\drawable\baklava.png
+* build\intermediates\res\merged\debug\drawable\budweiser.png
+* build\intermediates\res\merged\debug\drawable\budweiser2014.png
+* build\intermediates\res\merged\debug\drawable\chicken.png
+* build\intermediates\res\merged\debug\drawable\coke.png
+* build\intermediates\res\merged\debug\drawable\coke2014.png
+* build\intermediates\res\merged\debug\drawable\crengland.png
+* build\intermediates\res\merged\debug\drawable\ctrees.png
+* build\intermediates\res\merged\debug\drawable\diples.png
+* build\intermediates\res\merged\debug\drawable\dolmathes.png
+* build\intermediates\res\merged\debug\drawable\fasolakia.png
+* build\intermediates\res\merged\debug\drawable\feta.png
+* build\intermediates\res\merged\debug\drawable\flogeres.png
+* build\intermediates\res\merged\debug\drawable\fries.png
+* build\intermediates\res\merged\debug\drawable\galaktoboureko.png
+* build\intermediates\res\merged\debug\drawable\galatopita.png
+* build\intermediates\res\merged\debug\drawable\greekkey.png
+* build\intermediates\res\merged\debug\drawable\gyro.png
+* build\intermediates\res\merged\debug\drawable\inmag.png
+* build\intermediates\res\merged\debug\drawable\jims2014.png
+* build\intermediates\res\merged\debug\drawable\kalamari.png
+* build\intermediates\res\merged\debug\drawable\kataifi.png
+* build\intermediates\res\merged\debug\drawable\keftethes.png
+* build\intermediates\res\merged\debug\drawable\koulourakia.png
+* build\intermediates\res\merged\debug\drawable\kourabiedes.png
+* build\intermediates\res\merged\debug\drawable\kutv.png
+* build\intermediates\res\merged\debug\drawable\kutv2014.png
+* build\intermediates\res\merged\debug\drawable\lamb.png
+* build\intermediates\res\merged\debug\drawable\loukaniko.png
+* build\intermediates\res\merged\debug\drawable\loukoumades.png
+* build\intermediates\res\merged\debug\drawable\melomakarona.png
+* build\intermediates\res\merged\debug\drawable\mikes.png
+* build\intermediates\res\merged\debug\drawable\mikes2014.png
+* build\intermediates\res\merged\debug\drawable\natewade.png
+* build\intermediates\res\merged\debug\drawable\nicholas.png
+* build\intermediates\res\merged\debug\drawable\olives.png
+* build\intermediates\res\merged\debug\drawable\pastaflora.png
+* build\intermediates\res\merged\debug\drawable\pastitsio.png
+* build\intermediates\res\merged\debug\drawable\pilafi.png
+* build\intermediates\res\merged\debug\drawable\presto.png
+* build\intermediates\res\merged\debug\drawable\presto2014.png
+* build\intermediates\res\merged\debug\drawable\racelogo.png
+* build\intermediates\res\merged\debug\drawable\roofers.png
+* build\intermediates\res\merged\debug\drawable\salad.png
+* build\intermediates\res\merged\debug\drawable\shadow.xml
+* build\intermediates\res\merged\debug\drawable\souvlaki.png
+* build\intermediates\res\merged\debug\drawable\spanokopita.png
+* build\intermediates\res\merged\debug\drawable\stifatho.png
+* build\intermediates\res\merged\debug\drawable\tiropita.png
+* build\intermediates\res\merged\debug\drawable\tzatziki.png
+* build\intermediates\res\merged\debug\drawable\zions.png
+* build\intermediates\res\merged\debug\drawable\zions2014.png
+* build\intermediates\res\merged\debug\layout\
+* build\intermediates\res\merged\debug\layout\activity_main.xml
+* build\intermediates\res\merged\debug\layout\adfragmentlayout.xml
+* build\intermediates\res\merged\debug\layout\childrow.xml
+* build\intermediates\res\merged\debug\layout\content_frame.xml
+* build\intermediates\res\merged\debug\layout\coupon.xml
+* build\intermediates\res\merged\debug\layout\foodgrid.xml
+* build\intermediates\res\merged\debug\layout\foodinfo.xml
+* build\intermediates\res\merged\debug\layout\fragment_pager.xml
+* build\intermediates\res\merged\debug\layout\fragment_pager_list.xml
+* build\intermediates\res\merged\debug\layout\indvidual_recipe.xml
+* build\intermediates\res\merged\debug\layout\list.xml
+* build\intermediates\res\merged\debug\layout\menu_frame.xml
+* build\intermediates\res\merged\debug\layout\menu_list_item.xml
+* build\intermediates\res\merged\debug\layout\parentrow.xml
+* build\intermediates\res\merged\debug\layout\race.xml
+* build\intermediates\res\merged\debug\layout\row.xml
+* build\intermediates\res\merged\debug\layout\schedule.xml
+* build\intermediates\res\merged\debug\layout\schedule_info.xml
+* build\intermediates\res\merged\debug\layout\scheduletest.xml
+* build\intermediates\res\merged\debug\menu\
+* build\intermediates\res\merged\debug\menu\main.xml
+* build\intermediates\res\merged\debug\raw\
+* build\intermediates\res\merged\debug\raw\festivalmap.json
+* build\intermediates\res\merged\debug\raw\food.xml
+* build\intermediates\res\merged\debug\raw\schedule.xml
+* build\intermediates\res\merged\debug\raw\sponsors.xml
+* build\intermediates\res\merged\debug\values-sw720dp-land-v13\
+* build\intermediates\res\merged\debug\values-sw720dp-land-v13\values-sw720dp-land-v13.xml
+* build\intermediates\res\merged\debug\values-v11\
+* build\intermediates\res\merged\debug\values-v11\values-v11.xml
+* build\intermediates\res\merged\debug\values-v14\
+* build\intermediates\res\merged\debug\values-v14\values-v14.xml
+* build\intermediates\res\merged\debug\values\
+* build\intermediates\res\merged\debug\values\values.xml
+* build\intermediates\res\resources-debug.ap_
+* build\outputs\
+* build\outputs\logs\
+* build\outputs\logs\manifest-merger-debug-report.txt
+* gradle\
+* gradle\wrapper\
+* gradle\wrapper\gradle-wrapper.jar
+* gradle\wrapper\gradle-wrapper.properties
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+gson-2.2.4-javadoc.jar => com.google.code.gson:gson:2.3.1
+gson-2.2.4-sources.jar => com.google.code.gson:gson:2.3.1
+gson-2.2.4.jar => com.google.code.gson:gson:2.2.4
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.4.jar => version 2.2.4 in com.google.code.gson:gson:2.2.4
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* libs\google-play-services.jar => app\libs\google-play-services.jar
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

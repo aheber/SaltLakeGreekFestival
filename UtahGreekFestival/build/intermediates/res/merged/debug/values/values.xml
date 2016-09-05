@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="advetisements">
+        <item>coke</item>
+        <item>ctrees</item>
+        <item>crengland</item>
+        <item>roofers</item>
+        <item>zions</item>
+    </string-array>
+    <string-array name="color_names">
+        <item>SCHEDULE</item>
+        <item>FOOD</item>
+        <item>COUPON</item>
+        <item>RACE</item>
+    </string-array>
+    <color name="black">#000</color>
+    <color name="blue">#009</color>
+    <color name="darkgray">#333333</color>
+    <color name="gfblue">#2f65b0</color>
+    <color name="green">#090</color>
+    <color name="red">#900</color>
+    <color name="white">#FFF</color>
+    <item format="float" name="cameraStartLat" type="dimen">40.764052</item>
+    <item format="float" name="cameraStartLng" type="dimen">-111.898993</item>
+    <item format="float" name="cameraStartZoom" type="dimen">17.5</item>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <integer name="num_cols">1</integer>
+    <string name="action_settings">Settings</string>
+    <string name="advertdesc">Advertisement</string>
+    <string name="app_name">Salt Lake Greek Festival</string>
+    <string name="changing_fragments">Changing Fragments</string>
+    <string name="close">Close</string>
+    <string name="couponhead">2 For 1 Admission</string>
+    <string name="coupontext">Present at entrance gate. Limit one per phone \n Only Valid September 5th - 7th</string>
+    <string name="event">Event Name</string>
+    <string name="eventdesc">This is a description of one of the events</string>
+    <string name="eventloc">Main Stage</string>
+    <string name="eventtime">8:00PM</string>
+    <string name="first">First</string>
+    <string name="gftitle">2014 SLC Greek Festival</string>
+    <string name="greek_festival">Greek Festival</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="last">Last</string>
+    <string name="racedate">"Monday September 1st\nSugarhouse Park 1400 E 2100 S"</string>
+    <string name="raceprice">"Registration Fee: $25"</string>
+    <string name="racereg">"Register Online"</string>
+    <string name="title_activity_main">Greek Festival</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>
